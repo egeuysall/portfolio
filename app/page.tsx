@@ -26,10 +26,10 @@ export default function Home() {
               <div>
                 <ul className="hidden sm:hidden md:flex lg:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
                   <div className="flex items-center gap-6">
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition duration-300 ${poppins.className}`}>Links</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition duration-300 ${poppins.className}`}>Contact</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition duration-300 ${poppins.className}`}>Skills</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition duration-300 ${poppins.className}`}>Projects</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${poppins.className}`}>Links</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${poppins.className}`}>Contact</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${poppins.className}`}>Skills</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${poppins.className}`}>Projects</li></Link>
                     <Link href="#">
                       <Image
                         src="/assets/magnifier.svg"

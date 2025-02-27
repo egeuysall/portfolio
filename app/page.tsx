@@ -88,7 +88,8 @@ export default function Home() {
               name="Timora"
               desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
               tags={["Productivity", "Web", "JS"]}
-              img=""
+              img="/assets/timora.png"
+              className={`${lato.className} mt-4`}
             />
           </div>
         </main>

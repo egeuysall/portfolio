@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { ThemeProvider } from "./Components/theme-provider"
+import { ThemeToggle } from "./Components/theme-toggle"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   },
   description: "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design.",
   keywords: [
-    "Photography Portfolio", "Web Development", "UI/UX Design", "Ege Uysal", "React Developer", "Next.js", 
+    "Photography Portfolio", "Web Development", "UI/UX Design", "Ege Uysal", "React Developer", "Next.js",
     "JavaScript", "CSS", "Web Design", "Front-End Development", "App Development", "Creative Technology",
-    "Photography", "Web Designer", "Tech Portfolio", "Full-Stack Developer", "Front-End Developer", 
+    "Photography", "Web Designer", "Tech Portfolio", "Full-Stack Developer", "Front-End Developer",
     "UI/UX", "Creative Projects", "Digital Design", "Freelance Web Developer Portfolio"
   ],
   authors: [{ name: "Ege Uysal", url: "https://egeuysal.com" }],
@@ -93,7 +95,7 @@ export default function RootLayout({
     "@context": "http://schema.org",
     "@type": "Person",
     "name": "Ege Uysal",
-    "url": "https://www.egeuysal.com", 
+    "url": "https://www.egeuysal.com",
     "sameAs": [
       "https://www.linkedin.com/in/egeuysall",
       "https://twitter.com/egecreates",
@@ -138,7 +140,10 @@ export default function RootLayout({
         />
       </Head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {children}
+          <ThemeToggle />
+        </ThemeProvider>
       </body>
     </html>
   );

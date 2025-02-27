@@ -14,7 +14,7 @@ type ProjectProps = {
 const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
     <Link href="/">
-      <div className="p-8 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border mb-6 h-120">
+      <div className="p-8 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border h-120">
         <div className="flex justify-center h-48 overflow-hidden rounded-md">
           <Image
             src={img}

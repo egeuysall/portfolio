@@ -3,7 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import { Lato } from "next/font/google";
 import Link from "next/link";
-import Project from "./Components/Project.tsx";
+import Project from "./Components/Project";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
@@ -24,7 +24,7 @@ export default function Home() {
                 />
               </Link>
               <div>
-                <ul className="hidden sm:hidden md:flex lg:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
+                <ul className="hidden md:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
                   <div className="flex items-center gap-6">
                     <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Links</li></Link>
                     <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Contact</li></Link>
@@ -35,8 +35,9 @@ export default function Home() {
                         src="/assets/magnifier.svg"
                         width={18}
                         height={18}
-                        alt="Magnifier Icon"
-                        className="mr-6 dark:invert hover:opacity-75 active:opacity-50 transition duration-300" />
+                        alt="Search Icon"
+                        className="mr-6 dark:invert hover:opacity-75 active:opacity-50 transition duration-300"
+                      />
                     </Link>
                   </div>
                 </ul>
@@ -66,20 +67,28 @@ export default function Home() {
           <Analytics />
           <SpeedInsights />
           <div className="flex gap-3">
-            <button className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Download CV</button>
-            <button className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Reach Out</button>
+            <button
+              className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
+              aria-label="Download CV"
+            >
+              Download CV
+            </button>
+            <button
+              className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
+              aria-label="Reach Out"
+            >
+              Reach Out
+            </button>
           </div>
-          <div className="">
-            <h1 className={`${lato.className} mt-8 text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
-            Latest Work
+          <div className="mt-8">
+            <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
+              Latest Work
             </h1>
-            <div>
-              <Project
+            <Project
               name="Timora"
               desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
               tags={["Productivity", "Web", "JS"]}
-              />
-            </div>
+            />
           </div>
         </main>
       </div>

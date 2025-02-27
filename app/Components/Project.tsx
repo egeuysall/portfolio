@@ -11,10 +11,10 @@ type ProjectProps = {
   tags: string[];
 };
 
-const Project: React.FC<ProjectProps> = ({ img, name, desc, tags }) => {
+const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
     <Link href="/">
-      <a className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f]">
+      <div className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f]">
         <Image
           src={img}
           width={300}
@@ -38,9 +38,9 @@ const Project: React.FC<ProjectProps> = ({ img, name, desc, tags }) => {
             </span>
           ))}
         </div>
-      </a>
+      </div>
     </Link>
   );
 };
 
-export default Project;
+export default Project;efault Project;

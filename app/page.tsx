@@ -78,8 +78,8 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-          <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex-grow sm:flex-[2]">
+            <div className={`mt-4 ${lato.className} grid grid-cols-3 grid-rows-3 gap-4`}>
+              <div className="row-span-2 col-span-3">
                 <Project
                   name="Timora"
                   desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
@@ -87,7 +87,7 @@ export default function Home() {
                   img="/assets/timora.png"
                 />
               </div>
-              <div className="flex-grow sm:flex-1">
+              <div className="row-span-1 col-span-3">
                 <Project
                   name="Portfolio Website"
                   desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."

@@ -1,12 +1,11 @@
 "use client";
 
-import { Lato, Poppins } from "next/font/google";
+import { Lato } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
 
 export default function NotFound() {
   const [message, setMessage] = useState("It’s somewhere… but not here.");
@@ -21,7 +20,7 @@ export default function NotFound() {
 
   return (
     <div
-      className={`${poppins.className} flex flex-col items-center justify-center h-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24`}
+      className={`${lato.className} flex flex-col items-center justify-center h-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24`}
     >
       <div>
         <Image

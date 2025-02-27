@@ -1,10 +1,9 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
-import { Lato, Poppins } from "next/font/google";
+import { Lato } from "next/font/google";
 import Link from "next/link";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
 export default function Home() {
@@ -26,10 +25,10 @@ export default function Home() {
               <div>
                 <ul className="hidden sm:hidden md:flex lg:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
                   <div className="flex items-center gap-6">
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${poppins.className}`}>Links</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${poppins.className}`}>Contact</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${poppins.className}`}>Skills</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${poppins.className}`}>Projects</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Links</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Contact</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Skills</li></Link>
+                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Projects</li></Link>
                     <Link href="#">
                       <Image
                         src="/assets/magnifier.svg"
@@ -53,7 +52,7 @@ export default function Home() {
         </header>
 
         <main className="flex flex-col flex-1 gap-3 mt-16">
-          <p className={`${poppins.className} text-lg mt-4 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
+          <p className={`${lato.className} text-lg mt-4 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
             Hi, I&apos;m Ege Uysal.
           </p>
           <h1 className={`${lato.className} text-4xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
@@ -66,8 +65,8 @@ export default function Home() {
           <Analytics />
           <SpeedInsights />
           <div className="flex gap-3">
-            <button className={`${poppins.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Download CV</button>
-            <button className={`${poppins.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Reach Out</button>
+            <button className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Download CV</button>
+            <button className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Reach Out</button>
           </div>
         </main>
       </div>

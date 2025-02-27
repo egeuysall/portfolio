@@ -78,7 +78,7 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-            <div className={`mt-4 ${lato.className} flex gap-4`}>
+            <div className={`mt-4 ${lato.className} md:flex md:gap-4`}>
                 <Link href="/">
                 <Project
                   name="Timora"

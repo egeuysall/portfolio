@@ -55,7 +55,7 @@ export default function Home() {
           <p className={`${lato.className} text-xl mt-4 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
             Hi, I&apos;m Ege Uysal.
           </p>
-          <h1 className={`${lato.className} text-7xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
+          <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
             Photographer
             <br />
             Developer
@@ -69,10 +69,10 @@ export default function Home() {
             <button className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Reach Out</button>
           </div>
           <div className="">
-            <h1 className="text-7xl text-[#2e2e2e] dark:text-[#f2f2f2]">
+            <h1 className={`${lato.className} mt-8 text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
             Latest Work
             </h1>
-            
+
           </div>
         </main>
       </div>

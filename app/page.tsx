@@ -91,6 +91,12 @@ export default function Home() {
               tags={["Productivity", "Web", "JS"]}
               img="/assets/timora.png"
             />
+            <Project
+              name="Portfolio Website"
+              desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
+              tags={["Design", "Code", "Site"]}
+              img="/assets/portfolio.png"
+            />
             </div>
           </div>
         </main>

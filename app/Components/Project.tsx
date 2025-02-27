@@ -14,14 +14,14 @@ type ProjectProps = {
 const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
     <Link href="/">
-      <div className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border">
+      <div className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border mb-3">
         <div className="flex justify-center">
         <Image
           src={img}
           width={700}
           height={800}
           alt={`${name} image`}
-          className="rounded-md p-2"
+          className="rounded-md p-2 hover:grayscale transition duration-300"
         />
         </div>
         <h2 className={`${lato.className} text-3xl font-bold text-[#2e2e2e] dark:text-[#f2f2f2] mt-3`}>
@@ -30,7 +30,7 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
         <p className="text-[#7f7f7f] dark:text-[#cccccc] text-xl font-normal mt-2">
           {desc}
         </p>
-        <div className="flex gap-2 mt-4">
+        <div className="flex gap-2 mt-4 p-2">
           {tags.map((tag, index) => (
             <span
               key={index}

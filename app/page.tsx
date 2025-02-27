@@ -22,17 +22,25 @@ export default function Home() {
               />
               <div>
                 <ul className="hidden sm:hidden md:flex lg:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
-                  <li>Links</li>
-                  <li>Contact</li>
-                  <li>Skills</li>
-                  <li>Projects</li>
+                  <li className={`${poppins.className}`}>Links</li>
+                  <li className={`${poppins.className}`}>Contact</li>
+                  <li className={`${poppins.className}`}>Skills</li>
+                  <li className={`${poppins.className}`}>Projects</li>
+                  <li className={`${poppins.className}`}>
+                  <Image
+                  src="/assets/magnifier.svg"
+                  width={16}
+                  height={16}
+                  alt="Menu Icon"
+                  className="dark:invert sm:flex md:hidden lg:hidden mr-6 dark:invert" />
+                  </li>
                 </ul>
                 <Image
                   src="/assets/menu-icon.svg"
                   width={24}
                   height={24}
                   alt="Menu Icon"
-                  className="dark:invert sm:flex md:hidden lg:hidden"
+                  className="dark:invert sm:flex md:hidden lg:hidden mr-6"
                 />
               </div>
             </div>

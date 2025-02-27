@@ -30,8 +30,8 @@ export default function Home() {
                   <li>
                   <Image
                   src="/assets/magnifier.svg"
-                  width={16}
-                  height={16}
+                  width={18}
+                  height={18}
                   alt="Magnifier Icon"
                   className="mr-6 dark:invert" />
                   </li>

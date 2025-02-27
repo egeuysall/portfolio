@@ -9,7 +9,7 @@ const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
 export default function Home() {
   return (
-    <div className="flex items-center justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e]">
+    <div className="flex items-center justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e] box-border">
       <div className="bg-[#f2f2f2] h-screen w-[85vw] flex gap-8 flex-col dark:bg-[#2e2e2e]">
         <header className="w-full flex justify-center">
           <nav className="flex fixed top-0 left-0 right-0 z-10 w-[85vw] mx-auto">

@@ -79,23 +79,42 @@ export default function Home() {
               Latest Work
             </h1>
             <div className={`mt-4 ${lato.className} md:flex md:gap-4`}>
-                <Link href="/">
+              <Link href="/">
                 <Project
                   name="Timora"
                   desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
                   tags={["Productivity", "Web", "JS"]}
                   img="/assets/timora.png"
                 />
-                </Link>
+              </Link>
 
-                <Link href="/">
+              <Link href="/">
                 <Project
                   name="Portfolio Website"
                   desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
                   tags={["Design", "Code", "Site"]}
                   img="/assets/portfolio.png"
                 />
+              </Link>
+
+              <Link href="/">
+                <Project
+                  name="Loaner"
+                  desc="Loaner is a simple and intuitive mortgage calculator app that helps users estimate monthly payments by inputting loan amount, interest rate, and term length for accurate results."
+                  tags={["Design", "Code", "Swift"]}
+                  img="/assets/loaner.png"
+                />
+
+                  <Link href="/">
+                    <Project
+                      name="Productivity Guide"
+                      desc="The Productivity Guide offers practical strategies and methods for enhancing efficiency, focusing on actionable techniques to help individuals and teams maximize productivity and achieve their goals."
+                      tags={["Productivity", "Focus", "Workflow"]}
+                      img="/assets/productivity.png"
+                    />
+                  </Link>
                 </Link>
+              </Link>
             </div>
           </div>
         </main>

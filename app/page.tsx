@@ -3,7 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import { Lato } from "next/font/google";
 import Link from "next/link";
-import Project from "../components/Project.tsx";
+import Project from "./Components/Project.tsx";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 

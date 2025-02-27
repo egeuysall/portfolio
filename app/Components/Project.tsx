@@ -15,13 +15,13 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
     <Link href="/" className="rounded-md">
       <div className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border mb-3">
-        <div className="flex justify-center h-60 w-60 overflow-hidden rounded-full">
+        <div className="flex justify-center overflow-hidden rounded-t-2xl rounded-b-md">
           <Image
             src={img}
-            width={240}
-            height={240}
+            width={700}
+            height={800}
             alt={`${name} image`}
-            className="object-cover w-full h-full"
+            className="w-full h-full object-cover"
           />
         </div>
         <h2 className={`${lato.className} text-3xl font-bold text-[#2e2e2e] dark:text-[#f2f2f2] mt-3`}>
@@ -34,7 +34,7 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-[#f2f2f2] text-[#7f7f7f] dark:text-[#cccccc] dark:bg-[#7f7f7f] rounded-full px-2 py-1 text-sm"
+              className="bg-[#f2f2f2] text-[#7f7f7f] dark:text-[#cccccc] dark:bg-[#7f7f7f] rounded-full"
             >
               {tag}
             </span>

@@ -1,19 +1,23 @@
+/* src/styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Light mode (default) */
 :root {
-  --background: #ffffff;
+  --background: #f2f2f2;
   --foreground: #171717;
 }
 
+/* Dark mode styles using prefers-color-scheme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #2e2e2e;
     --foreground: #ededed;
   }
 }
 
+/* Applying CSS variables to body */
 body {
   color: var(--foreground);
   background: var(--background);

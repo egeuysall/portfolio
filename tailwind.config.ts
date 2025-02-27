@@ -6,12 +6,15 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'media', // Ensure dark mode is based on the user's system preference
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",  // Use CSS variable for background color
-        foreground: "var(--foreground)",  // Use CSS variable for text color
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
+      height: {
+        120: '30rem',
       },
     },
   },

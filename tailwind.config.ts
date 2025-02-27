@@ -14,7 +14,7 @@ export default {
         foreground: "var(--foreground)",
       },
       height: {
-        120: '32rem',
+        120: '34rem',
       },
     },
   },

@@ -30,11 +30,11 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
         <p className="text-[#7f7f7f] dark:text-[#cccccc] text-xl font-normal mt-2">
           {desc}
         </p>
-        <div className="flex gap-2 mt-4 p-6">
+        <div className="flex gap-2 mt-4 p-2">
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-[#f2f2f2] text-[#7f7f7f] dark:text-[#cccccc] dark:bg-[#7f7f7f] rounded-full"
+              className="bg-[#f2f2f2] text-[#7f7f7f] dark:text-[#cccccc] dark:bg-[#7f7f7f] p-2 rounded-full"
             >
               {tag}
             </span>

@@ -15,11 +15,11 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
     <Link href="/" className="rounded-md">
       <div className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border mb-3">
-        <div className="flex justify-center overflow-hidden rounded-t-2xl rounded-b-md">
+        <div className="flex justify-center h-48 overflow-hidden rounded-md">
           <Image
             src={img}
             width={700}
-            height={800}
+            height={400}
             alt={`${name} image`}
             className="w-full h-full object-cover"
           />

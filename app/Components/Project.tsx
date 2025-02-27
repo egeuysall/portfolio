@@ -34,7 +34,7 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-[#f2f2f2] text-[#7f7f7f] dark:text-[#cccccc] dark:bg-[#7f7f7f] p-2 rounded-full"
+              className="bg-[#f2f2f2] text-[#7f7f7f] dark:text-[#cccccc] dark:bg-[#7f7f7f] p-4 rounded-full"
             >
               {tag}
             </span>

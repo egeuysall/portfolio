@@ -78,7 +78,7 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-            <div className={`mt-4 ${lato.className}`}>
+            <div className={`mt-4 ${lato.className} grid grid-cols-3 grid-rows-3`}>
               <Project
                 name="Timora"
                 desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."

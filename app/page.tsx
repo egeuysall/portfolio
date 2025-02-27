@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex items-center justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e]">
       <div className="bg-[#f2f2f2] h-screen w-[85vw] flex gap-8 flex-col dark:bg-[#2e2e2e]">
         <header className="w-full flex justify-center">
-          <nav className="flex w-full max-w-screen-lg mx-auto fixed top-0 z-10">
+          <nav className="flex fixed top-0 left-0 right-0 z-10 w-[85vw] mx-auto">
             <div className="h-14 w-full bg-[#2e2e2e] mt-8 rounded-md flex items-center justify-between shadow-md dark:bg-[#f2f2f2]">
               <Link href="/">
                 <Image

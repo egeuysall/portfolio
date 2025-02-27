@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex items-center h-screen justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e] box-border">
       <div className="bg-[#f2f2f2] h-screen w-[85vw] flex gap-8 flex-col dark:bg-[#2e2e2e]">
-        <header className="w-full flex justify-center">
+        <header className="w-full flex justify-center rounded-md">
           <nav className="flex fixed top-0 left-0 right-0 z-10 w-[85vw] mx-auto">
             <div className="h-14 w-full bg-[#2e2e2e] mt-8 flex items-center justify-between shadow-md dark:bg-[#f2f2f2]">
               <Link href="/">

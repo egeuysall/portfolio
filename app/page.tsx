@@ -84,13 +84,14 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
+            <div className={`mt-4 ${lato.className}`}>
             <Project
               name="Timora"
               desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
               tags={["Productivity", "Web", "JS"]}
               img="/assets/timora.png"
-              className={`${lato.className} mt-4`}
             />
+            </div>
           </div>
         </main>
       </div>

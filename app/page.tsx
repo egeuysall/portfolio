@@ -86,42 +86,34 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-            <div className={`mt-4 ${lato.className} grid grid-cols-1 md:grid-cols-2 gap-4`}>
-              <Link href="/" className="h-full">
-                <Project
-                  name="Timora"
-                  desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
-                  tags={["Productivity", "Web", "JS"]}
-                  img="/assets/timora.png"
-                />
-              </Link>
+            <div className={`mt-4 ${lato.className} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6`}>
+              <Project
+                name="Timora"
+                desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
+                tags={["Productivity", "Web", "JS"]}
+                img="/assets/timora.png"
+              />
 
-              <Link href="/" className="h-full">
-                <Project
-                  name="Portfolio Website"
-                  desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
-                  tags={["Design", "Code", "Site"]}
-                  img="/assets/portfolio.png"
-                />
-              </Link>
+              <Project
+                name="Portfolio Website"
+                desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
+                tags={["Design", "Code", "Site"]}
+                img="/assets/portfolio.png"
+              />
 
-              <Link href="/" className="h-full">
-                <Project
-                  name="Loaner"
-                  desc="Loaner is a simple and intuitive mortgage calculator app that helps users estimate monthly payments by inputting loan amount, interest rate, and term length for accurate results."
-                  tags={["Design", "Code", "Swift"]}
-                  img="/assets/loaner.png"
-                />
-              </Link>
+              <Project
+                name="Loaner"
+                desc="Loaner is a simple and intuitive mortgage calculator app that helps users estimate monthly payments by inputting loan amount, interest rate, and term length for accurate results."
+                tags={["Design", "Code", "Swift"]}
+                img="/assets/loaner.png"
+              />
 
-              <Link href="/" className="h-full">
-                <Project
-                  name="Productivity Guide"
-                  desc="The Productivity Guide offers practical strategies and methods for enhancing efficiency, focusing on actionable techniques to help individuals and teams maximize productivity and achieve their goals."
-                  tags={["Productivity", "Focus", "Workflow"]}
-                  img="/assets/productivity.png"
-                />
-
+              <Project
+                name="Productivity Guide"
+                desc="The Productivity Guide offers practical strategies and methods for enhancing efficiency, focusing on actionable techniques to help individuals and teams maximize productivity and achieve their goals."
+                tags={["Productivity", "Focus", "Workflow"]}
+                img="/assets/productivity.png"
+              />
             </div>
           </div>
         </main>

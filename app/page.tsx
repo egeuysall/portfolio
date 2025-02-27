@@ -20,13 +20,6 @@ export default function Home() {
                 alt="Logo"
                 className="ml-6 dark:invert"
               />
-              <Image
-                src="/assets/menu-icon.svg"
-                width={24}
-                height={24}
-                alt="Menu Icon"
-                className="dark:invert sm:flex md:hidden lg:hidden"
-              />
               <div>
                 <ul className="hidden sm:hidden md:flex lg:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
                   <li>Links</li>
@@ -34,6 +27,13 @@ export default function Home() {
                   <li>Skills</li>
                   <li>Projects</li>
                 </ul>
+                <Image
+                  src="/assets/menu-icon.svg"
+                  width={24}
+                  height={24}
+                  alt="Menu Icon"
+                  className="dark:invert sm:flex md:hidden lg:hidden"
+                />
               </div>
             </div>
           </nav>

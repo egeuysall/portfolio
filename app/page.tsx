@@ -26,10 +26,18 @@ export default function Home() {
               <div>
                 <ul className="hidden md:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
                   <div className="flex items-center gap-6">
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Links</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Contact</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Skills</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Projects</li></Link>
+                    <Link href="#">
+                      <li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Links</li>
+                    </Link>
+                    <Link href="#">
+                      <li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Contact</li>
+                    </Link>
+                    <Link href="#">
+                      <li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Skills</li>
+                    </Link>
+                    <Link href="#">
+                      <li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Projects</li>
+                    </Link>
                     <Link href="#">
                       <Image
                         src="/assets/magnifier.svg"
@@ -104,16 +112,15 @@ export default function Home() {
                   tags={["Design", "Code", "Swift"]}
                   img="/assets/loaner.png"
                 />
+              </Link>
 
-                  <Link href="/">
-                    <Project
-                      name="Productivity Guide"
-                      desc="The Productivity Guide offers practical strategies and methods for enhancing efficiency, focusing on actionable techniques to help individuals and teams maximize productivity and achieve their goals."
-                      tags={["Productivity", "Focus", "Workflow"]}
-                      img="/assets/productivity.png"
-                    />
-                  </Link>
-                </Link>
+              <Link href="/">
+                <Project
+                  name="Productivity Guide"
+                  desc="The Productivity Guide offers practical strategies and methods for enhancing efficiency, focusing on actionable techniques to help individuals and teams maximize productivity and achieve their goals."
+                  tags={["Productivity", "Focus", "Workflow"]}
+                  img="/assets/productivity.png"
+                />
               </Link>
             </div>
           </div>

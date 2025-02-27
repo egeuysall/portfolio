@@ -22,6 +22,7 @@ export default function Home() {
               />
               <div>
                 <ul className="hidden sm:hidden md:flex lg:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
+                  <div className="flex items-center">
                   <li className={`${poppins.className}`}>Links</li>
                   <li className={`${poppins.className}`}>Contact</li>
                   <li className={`${poppins.className}`}>Skills</li>
@@ -34,6 +35,7 @@ export default function Home() {
                   alt="Magnifier Icon"
                   className="mr-6 dark:invert" />
                   </li>
+                  </div>
                 </ul>
                 <Image
                   src="/assets/menu-icon.svg"

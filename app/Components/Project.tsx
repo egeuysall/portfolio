@@ -13,7 +13,7 @@ type ProjectProps = {
 
 const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
-    <Link href="/">
+    <Link href="/" className="rounded-md">
       <div className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border mb-3">
         <div className="flex justify-center rounded-md">
           <Image

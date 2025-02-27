@@ -20,7 +20,7 @@ export default function Home() {
                   width={24}
                   height={24}
                   alt="Logo"
-                  className="ml-6 dark:invert hover:opacity-75 active:scale-95 transition duration-300"
+                  className="ml-6 dark:invert hover:opacity-75 active:scale-95 transition duration-300 rounded-md"
                 />
               </Link>
               <div>

@@ -26,13 +26,13 @@ export default function Home() {
                   <li className={`${poppins.className}`}>Contact</li>
                   <li className={`${poppins.className}`}>Skills</li>
                   <li className={`${poppins.className}`}>Projects</li>
-                  <li className={`${poppins.className}`}>
+                  <li>
                   <Image
                   src="/assets/magnifier.svg"
                   width={16}
                   height={16}
-                  alt="Menu Icon"
-                  className="dark:invert sm:flex md:hidden lg:hidden mr-6 dark:invert" />
+                  alt="Magnifier Icon"
+                  className="mr-6 dark:invert" />
                   </li>
                 </ul>
                 <Image

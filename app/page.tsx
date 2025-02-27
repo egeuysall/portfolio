@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import { Lato } from "next/font/google";
 import Link from "next/link";
+import Project from "./components/projects.tsx";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
@@ -52,7 +53,7 @@ export default function Home() {
         </header>
 
         <main className="flex flex-col flex-1 gap-3 mt-16">
-          <p className={`${lato.className} text-xl mt-4 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
+          <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
             Hi, I&apos;m Ege Uysal.
           </p>
           <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
@@ -72,7 +73,13 @@ export default function Home() {
             <h1 className={`${lato.className} mt-8 text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
             Latest Work
             </h1>
-
+            <div>
+              <Project
+              name="Timora"
+              desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
+              tags={["Productivity", "Web", "JS"]}
+              />
+            </div>
           </div>
         </main>
       </div>

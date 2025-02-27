@@ -12,8 +12,8 @@ export default function Home() {
     <div className="flex items-center h-screen justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e] box-border">
       <div className="bg-[#f2f2f2] h-screen w-[85vw] flex gap-8 flex-col dark:bg-[#2e2e2e]">
         <header className="w-full flex justify-center rounded-md">
-          <nav className="flex fixed top-0 left-0 right-0 z-10 w-[85vw] mx-auto">
-            <div className="h-14 w-full bg-[#2e2e2e] mt-8 flex items-center justify-between shadow-md dark:bg-[#f2f2f2]">
+          <nav className="flex fixed top-0 left-0 right-0 z-10 w-[85vw] mx-auto rounded-md">
+            <div className="h-14 w-full bg-[#2e2e2e] mt-8 flex items-center justify-between shadow-md dark:bg-[#f2f2f2] rounded-md">
               <Link href="/">
                 <Image
                   src="/assets/logo.svg"
@@ -26,10 +26,34 @@ export default function Home() {
               <div>
                 <ul className="hidden md:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
                   <div className="flex items-center gap-6">
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Links</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>Contact</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Skills</li></Link>
-                    <Link href="#"><li className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}>Projects</li></Link>
+                    <Link href="#">
+                      <li
+                        className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}
+                      >
+                        Links
+                      </li>
+                    </Link>
+                    <Link href="#">
+                      <li
+                        className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}
+                      >
+                        Contact
+                      </li>
+                    </Link>
+                    <Link href="#">
+                      <li
+                        className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}
+                      >
+                        Skills
+                      </li>
+                    </Link>
+                    <Link href="#">
+                      <li
+                        className={`hover:opacity-75 active:opacity-50 font-bold transition duration-300 ${lato.className}`}
+                      >
+                        Projects
+                      </li>
+                    </Link>
                     <Link href="#">
                       <Image
                         src="/assets/magnifier.svg"
@@ -85,18 +109,18 @@ export default function Home() {
               Latest Work
             </h1>
             <div className={`mt-4 ${lato.className}`}>
-            <Project
-              name="Timora"
-              desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
-              tags={["Productivity", "Web", "JS"]}
-              img="/assets/timora.png"
-            />
-            <Project
-              name="Portfolio Website"
-              desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
-              tags={["Design", "Code", "Site"]}
-              img="/assets/portfolio.png"
-            />
+              <Project
+                name="Timora"
+                desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
+                tags={["Productivity", "Web", "JS"]}
+                img="/assets/timora.png"
+              />
+              <Project
+                name="Portfolio Website"
+                desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
+                tags={["Design", "Code", "Site"]}
+                img="/assets/portfolio.png"
+              />
             </div>
           </div>
         </main>

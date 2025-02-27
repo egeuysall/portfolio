@@ -1,16 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Lato } from "next/font/google";
-
-const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
-
-type ProjectProps = {
-  img: string;
-  name: string;
-  desc: string;
-  tags: string[];
-};
-
 const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
     <Link href="/" className="rounded-md">
@@ -21,7 +8,7 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
             width={700}
             height={800}
             alt={`${name} image`}
-            className="m-auto w-full h-full object-cover p-2 hover:grayscale transition duration-300"
+            className="m-auto w-full h-full object-cover rounded-full p-2 hover:grayscale transition duration-300"
           />
         </div>
         <h2 className={`${lato.className} text-3xl font-bold text-[#2e2e2e] dark:text-[#f2f2f2] mt-3`}>
@@ -44,5 +31,3 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
     </Link>
   );
 };
-
-export default Project;

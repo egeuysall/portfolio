@@ -86,8 +86,8 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-            <div className={`mt-4 ${lato.className} md:flex md:gap-4`}>
-              <Link href="/">
+            <div className={`mt-4 ${lato.className} grid grid-cols-1 md:grid-cols-2 gap-4`}>
+              <Link href="/" className="h-full">
                 <Project
                   name="Timora"
                   desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
@@ -96,7 +96,7 @@ export default function Home() {
                 />
               </Link>
 
-              <Link href="/">
+              <Link href="/" className="h-full">
                 <Project
                   name="Portfolio Website"
                   desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
@@ -105,7 +105,7 @@ export default function Home() {
                 />
               </Link>
 
-              <Link href="/">
+              <Link href="/" className="h-full">
                 <Project
                   name="Loaner"
                   desc="Loaner is a simple and intuitive mortgage calculator app that helps users estimate monthly payments by inputting loan amount, interest rate, and term length for accurate results."
@@ -114,14 +114,14 @@ export default function Home() {
                 />
               </Link>
 
-              <Link href="/">
+              <Link href="/" className="h-full">
                 <Project
                   name="Productivity Guide"
                   desc="The Productivity Guide offers practical strategies and methods for enhancing efficiency, focusing on actionable techniques to help individuals and teams maximize productivity and achieve their goals."
                   tags={["Productivity", "Focus", "Workflow"]}
                   img="/assets/productivity.png"
                 />
-              </Link>
+
             </div>
           </div>
         </main>

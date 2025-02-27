@@ -15,13 +15,13 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
   return (
     <Link href="/" className="rounded-md">
       <div className="p-4 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border mb-3">
-        <div className="flex justify-center rounded-md h-60 object-cover rounded-t-2xl rounded-b-md overflow-hidden">
+        <div className="flex justify-center rounded-md">
           <Image
             src={img}
             width={700}
             height={800}
             alt={`${name} image`}
-            className="rounded-md p-2 hover:grayscale transition duration-300 m-auto w-full h-full object-cover"
+            className="rounded-md p-2 hover:grayscale transition duration-300"
           />
         </div>
         <h2 className={`${lato.className} text-3xl font-bold text-[#2e2e2e] dark:text-[#f2f2f2] mt-3`}>

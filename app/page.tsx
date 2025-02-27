@@ -74,26 +74,30 @@ export default function Home() {
               Reach Out
             </button>
           </div>
+
+          {/* Latest Work Section */}
           <div className="mt-8">
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-            <div className={`mt-4 ${lato.className} grid grid-cols-3 grid-rows-3`}>
-              <div className="row-span-2 col-span-3">
-              <Project
-                name="Timora"
-                desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
-                tags={["Productivity", "Web", "JS"]}
-                img="/assets/timora.png"
-              />
+            <div className={`mt-4 grid grid-cols-3 grid-rows-[2fr_1fr] auto-rows-fr gap-4`}>
+              <div className="row-span-2 col-span-3 min-h-[300px]">
+                <Project
+                  name="Timora"
+                  desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
+                  tags={["Productivity", "Web", "JS"]}
+                  img="/assets/timora.png"
+                  className="h-full w-full"
+                />
               </div>
-              <div className="row-span-1 col-span-3">
-              <Project
-                name="Portfolio Website"
-                desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
-                tags={["Design", "Code", "Site"]}
-                img="/assets/portfolio.png"
-              />
+              <div className="row-span-1 col-span-3 min-h-[150px]">
+                <Project
+                  name="Portfolio Website"
+                  desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
+                  tags={["Design", "Code", "Site"]}
+                  img="/assets/portfolio.png"
+                  className="h-full w-full"
+                />
               </div>
             </div>
           </div>

@@ -43,4 +43,4 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
   );
 };
 
-export default Project;efault Project;
+export default Project;

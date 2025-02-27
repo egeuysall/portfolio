@@ -79,18 +79,22 @@ export default function Home() {
               Latest Work
             </h1>
             <div className={`mt-4 ${lato.className} grid grid-cols-3 grid-rows-3`}>
+              <div className="grid-rows-2">
               <Project
                 name="Timora"
                 desc="Timora is a Pomodoro timer app designed to boost productivity with customizable intervals, task tracking, and simple, intuitive features."
                 tags={["Productivity", "Web", "JS"]}
                 img="/assets/timora.png"
               />
+              </div>
+              <div className="grid-rows-1">
               <Project
                 name="Portfolio Website"
                 desc="The portfolio website is a minimalist, mobile-first site showcasing my web development, photography, and design work, built with custom code for performance and simplicity."
                 tags={["Design", "Code", "Site"]}
                 img="/assets/portfolio.png"
               />
+              </div>
             </div>
           </div>
         </main>

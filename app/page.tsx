@@ -57,8 +57,6 @@ export default function Home() {
 
         {/* Main Content */}
         <main className="w-[85vw] flex flex-col flex-1 gap-4 mt-16">
-          <div className="md:flex gap-4">
-            <div>
               <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
                 Hi, I&apos;m Ege Uysal.
               </p>
@@ -83,14 +81,6 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center h-48 overflow-hidden rounded-md">
-                <Image
-                  src="/assets/profile-picture.jpg"
-                  width={512}
-                  height={512}
-                  alt="Profile Picture"
-                  className="hidden lg:flex hover:opacity-75 active:opacity-50 transition duration-300 w-full h-full object-cover"
-                />
-            </div>
           </div>
 
           {/* Latest Work */}

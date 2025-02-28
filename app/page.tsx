@@ -71,17 +71,17 @@ export default function Home() {
           <SpeedInsights />
 
           {/* Buttons */}
-          <div className="flex gap-3">
-            <CallAction 
+          <div className="flex">
+            <CallAction
               name="Download CV"
               link="/"
             />
-            <CallAction 
+
+            <CallAction
               name="Reach Out"
               link="/"
             />
-            </div>
-
+          </div>
           {/* Latest Work */}
           <section className="mt-8">
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>

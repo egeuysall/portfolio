@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image'; // Import the Image component
 
 const ThemeToggleButton = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -34,9 +35,9 @@ const ThemeToggleButton = () => {
       className="hidden md:inline-block fixed bottom-4 left-4 p-3 rounded-full border-2 border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600 shadow-sm transition duration-300"
     >
       {theme === 'light' ? (
-        <img src="/assets/moon.svg" alt="Moon icon" width={20} height={20} />
+        <Image src="/assets/moon.svg" alt="Moon icon" width={20} height={20} />
       ) : (
-        <img src="/assets/sun.svg" alt="Sun icon" width={20} height={20} />
+        <Image src="/assets/sun.svg" alt="Sun icon" width={20} height={20} />
       )}
     </button>
   );

@@ -69,7 +69,7 @@ export default function Home() {
           <SpeedInsights />
 
           {/* Buttons */}
-          <div className="flex gap-3 md:inline md:mr-3">
+          <div className="flex flex-col gap-3 md:flex-row md:mr-3">
             {["Download CV", "Reach Out"].map((text, index) => (
               <button
                 key={index}

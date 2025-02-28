@@ -59,31 +59,35 @@ export default function Home() {
 
         {/* Main Content */}
         <main className="w-[85vw] max-w-[85vw] flex flex-col flex-1 gap-4 mt-16">
-          <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
-            Hi, I&apos;m Ege Uysal.
-          </p>
-          <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2] leading-tight mb-6`}>
-            Photographer<br />Developer<br />Founder
-          </h1>
+          <section className="intro">
+            <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
+              Hi, I&apos;m Ege Uysal.
+            </p>
+            <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2] leading-tight mb-6`}>
+              Photographer<br />Developer<br />Founder
+            </h1>
+          </section>
 
           {/* Analytics */}
           <Analytics />
           <SpeedInsights />
 
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-4 mt-4 w-full">
-            <CallAction
-              name="Download CV"
-              link="/"
-            />
-            <CallAction
-              name="Reach Out"
-              link="/"
-            />
-          </div>
+          <section className="call-to-action">
+            <div className="flex flex-col md:flex-row gap-4 mt-4 w-full">
+              <CallAction
+                name="Download CV"
+                link="/"
+              />
+              <CallAction
+                name="Reach Out"
+                link="/"
+              />
+            </div>
+          </section>
 
           {/* Latest Work */}
-          <section className="mt-8 w-full">
+          <section className="latest-work mt-8 w-full">
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>

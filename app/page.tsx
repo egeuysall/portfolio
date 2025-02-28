@@ -72,15 +72,18 @@ export default function Home() {
 
           {/* Buttons */}
           <div>
-            <CallAction
-              name="Download CV"
-              link="/"
-            />
-
-            <CallAction
-              name="Reach Out"
-              link="/"
-            />
+            <div className="mr-3 mb-3">
+              <CallAction
+                name="Download CV"
+                link="/"
+              />
+            </div>
+            <div>
+              <CallAction
+                name="Reach Out"
+                link="/"
+              />
+            </div>
           </div>
           {/* Latest Work */}
           <section className="mt-8">

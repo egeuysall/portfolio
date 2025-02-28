@@ -5,6 +5,7 @@ import { Lato } from "next/font/google";
 import Link from "next/link";
 import Project from "./Components/Project";
 import ThemeToggleButton from './Components/ThemeToggleButton';
+import CallAction from "./Components/CallAction";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
@@ -70,15 +71,13 @@ export default function Home() {
           <SpeedInsights />
 
           {/* Buttons */}
-          <div className="flex flex-col gap-3 md:gap-3 md:flex-row md:mr-3">
-            {["Download CV", "Reach Out"].map((text, index) => (
-              <button
-                key={index}
-                className={`${lato.className} bg-[#7f8c8f] w-full md:w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
-              >
-                {text}
-              </button>
-            ))}
+          <div className={`${lato.className} flex flex-col gap-3 md:gap-3 md:flex-row md:mr-3`}>
+            <CallAction 
+              name="Download CV"
+            />
+            <CallAction 
+              name="Reach Out"
+            />
           </div>
 
           {/* Latest Work */}

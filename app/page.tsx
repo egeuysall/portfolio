@@ -3,9 +3,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import { Lato } from "next/font/google";
 import Link from "next/link";
-import Project from "./Components/Project";
-import ThemeToggleButton from './Components/ThemeToggleButton';
-import CallAction from "./Components/CallAction";
+import Project from "./components/Project";
+import ThemeToggleButton from './components/ThemeToggleButton';
+import CallAction from "./components/CallAction";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
@@ -87,7 +87,7 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-            <div className={`${lato.className} mt-4 grid grid-cols-1 md:grid-cols-2 gap-6`}>
+            <div className={`${lato.className} mt-4 grid grid-cols-1 md:grid-cols-2 gap-4`}>
               {[
                 {
                   name: "Timora",

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Lato } from "next/font/google";
 
+const lato = Lato({ subsets: ["latin"], weight: ["700"] });
+
 const CallAction = ( name:string ) => {
     return (
         <Link href="/" aria-label="Call-to-action button">

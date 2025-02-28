@@ -12,11 +12,11 @@ const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 export default function Home() {
   return (
     <div className="flex items-center h-screen justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e]">
-      <div className="h-screen flex-1 flex flex-col gap-8 items-center w-full max-w-screen-lg">
+      <div className="h-screen flex-1 flex flex-col gap-8 items-center w-[85vw] max-w-[85vw]">
 
         {/* Header */}
         <header className="w-full flex justify-center">
-          <nav className="fixed top-0 z-10 w-full max-w-screen-lg mx-auto">
+          <nav className="fixed top-0 z-10 w-[85vw] max-w-[85vw] mx-auto">
             <div className="h-14 w-full bg-[#2e2e2e] mt-8 flex items-center justify-between shadow-lg dark:bg-[#f2f2f2] rounded-md px-6">
               <Link href="/" aria-label="Home">
                 <Image
@@ -58,7 +58,7 @@ export default function Home() {
         </header>
 
         {/* Main Content */}
-        <main className="w-full flex flex-col flex-1 gap-4 mt-16 max-w-screen-lg">
+        <main className="w-[85vw] max-w-[85vw] flex flex-col flex-1 gap-4 mt-16">
           <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
             Hi, I&apos;m Ege Uysal.
           </p>

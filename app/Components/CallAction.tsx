@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Lato } from "next/font/google";
 
 const CallAction = ( name:string ) => {
     return (

@@ -3,9 +3,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import { Lato } from "next/font/google";
 import Link from "next/link";
-import Project from "../Components/Project";
-import ThemeToggleButton from '../Components/ThemeToggleButton';
-import CallAction from "../Components/CallAction";
+import Project from "./Components/Project";
+import ThemeToggleButton from './Components/ThemeToggleButton';
+import CallAction from "./Components/CallAction";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 

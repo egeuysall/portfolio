@@ -5,7 +5,6 @@ import { Lato } from "next/font/google";
 import Link from "next/link";
 import Project from "./Components/Project";
 import ThemeToggleButton from './Components/ThemeToggleButton';
-import type { AppProps } from 'next/app'
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
@@ -119,7 +118,6 @@ export default function Home() {
             </div>
           </section>
         </main>
-        <Component {...pageProps} />
         <ThemeToggleButton />
       </div>
     </div>

@@ -1,44 +1,34 @@
-"use client"
+'use client'
 
-import { useEffect, useState } from 'react';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import { useState, useEffect } from "react";
+import Image from "next/image";
 
-const ThemeToggleButton = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+export default function ThemeToggleButton() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Detect the system's theme preference on mount and listen for changes
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const updateTheme = (e?: MediaQueryListEvent) => {
-      const newTheme = e?.matches || mediaQuery.matches ? 'dark' : 'light';
-      setTheme(newTheme);
-      document.documentElement.classList.toggle('dark', newTheme === 'dark');
-    };
-
-    updateTheme();
-    mediaQuery.addEventListener('change', updateTheme);
-
-    return () => mediaQuery.removeEventListener('change', updateTheme);
+    // Check system preference on client-side
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setIsDarkMode(prefersDark);
   }, []);
 
-  // Toggle theme manually
   const toggleTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark';
-    setTheme(newTheme);
-    document.documentElement.classList.toggle('dark', newTheme === 'dark');
+    setIsDarkMode((prevMode) => !prevMode);
+    // You can store the preference in localStorage if needed
+    document.documentElement.classList.toggle("dark", !isDarkMode);
   };
 
   return (
     <button
       onClick={toggleTheme}
-      className="fixed bottom-5 left-5 w-10 h-10 flex items-center justify-center rounded-full transition-all duration-200 
-        bg-gray-900 text-white dark:bg-white dark:text-gray-900 
-        hover:scale-110 shadow-lg"
-      aria-label="Toggle Theme"
+      className="fixed bottom-4 left-4 p-2 rounded-full bg-gray-300 dark:bg-gray-700 hover:scale-105 transition"
     >
-      {theme === 'dark' ? <FaMoon size={18} /> : <FaSun size={18} />}
+      <Image
+        src={isDarkMode ? "/assets/sun.svg" : "/assets/moon.svg"}
+        width={24}
+        height={24}
+        alt="Theme Toggle"
+      />
     </button>
   );
-};
-
-export default ThemeToggleButton;
+}

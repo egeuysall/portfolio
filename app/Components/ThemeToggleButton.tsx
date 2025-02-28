@@ -1,34 +1,45 @@
-'use client'
+'use client';
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { useEffect, useState } from 'react';
 
-export default function ThemeToggleButton() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const ThemeToggleButton = () => {
+  const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
-    // Check system preference on client-side
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setIsDarkMode(prefersDark);
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
+
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.classList.add(savedTheme);
+    } else {
+      const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = prefersDarkMode ? 'dark' : 'light';
+      setTheme(initialTheme);
+      document.documentElement.classList.add(initialTheme);
+    }
   }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-    // You can store the preference in localStorage if needed
-    document.documentElement.classList.toggle("dark", !isDarkMode);
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.documentElement.classList.remove(theme);
+    document.documentElement.classList.add(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
   return (
     <button
       onClick={toggleTheme}
-      className="fixed bottom-4 left-4 p-2 rounded-full bg-gray-300 dark:bg-gray-700 hover:scale-105 transition"
+      aria-label="Toggle theme"
+      className="p-2 rounded-md dark:text-white text-black bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700"
     >
-      <Image
-        src={isDarkMode ? "/assets/sun.svg" : "/assets/moon.svg"}
-        width={24}
-        height={24}
-        alt="Theme Toggle"
-      />
+      {theme === 'light' ? (
+        <img src="/assets/custom-moon-icon.svg" alt="Moon icon" width={20} height={20} />
+      ) : (
+        <img src="/assets/custom-sun-icon.svg" alt="Sun icon" width={20} height={20} />
+      )}
     </button>
   );
-}
+};
+
+export default ThemeToggleButton;

@@ -29,7 +29,7 @@ const ThemeToggleButton = () => {
     <button
       onClick={toggleTheme}
       aria-label="Toggle theme"
-      className="fixed bottom-4 left-4 p-3 rounded-full border-2 border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600 shadow-sm transition duration-300"
+      className="hidden md:inline-block fixed bottom-4 left-4 p-3 rounded-full border-2 border-gray-300 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-600 shadow-sm transition duration-300"
     >
       {theme === 'light' ? (
         <Image src="/assets/moon.svg" alt="Moon icon" width={20} height={20} />

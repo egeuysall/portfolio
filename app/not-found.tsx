@@ -45,6 +45,7 @@ export default function NotFound() {
         </h2>
           <CallAction 
             name="Go Home"
+            link="/"
           />
       </div>
     </div>

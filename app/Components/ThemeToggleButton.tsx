@@ -7,22 +7,42 @@ const ThemeToggleButton = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
+    // Function to apply the theme
+    const applyTheme = (theme: 'light' | 'dark') => {
+      setTheme(theme);
+      document.documentElement.classList.remove('light', 'dark');
+      document.documentElement.classList.add(theme);
+    };
+
     // Check the user's system theme preference (light or dark)
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     // Set the theme based on system preference
     const initialTheme = prefersDarkMode ? 'dark' : 'light';
-    setTheme(initialTheme);
+    applyTheme(initialTheme);
 
-    // Apply the theme class to the HTML element
-    document.documentElement.classList.add(initialTheme);
+    // Listen for changes to the system theme
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event: MediaQueryListEvent) => {
+      applyTheme(event.matches ? 'dark' : 'light');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    document.documentElement.classList.remove(theme);
-    document.documentElement.classList.add(newTheme);
+    applyTheme(newTheme);
+  };
+
+  const applyTheme = (theme: 'light' | 'dark') => {
+    setTheme(theme);
+    document.documentElement.classList.remove('light', 'dark');
+    document.documentElement.classList.add(theme);
   };
 
   return (

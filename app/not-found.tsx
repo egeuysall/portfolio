@@ -1,20 +1,20 @@
-"use client";
+"use client";  
 
 import { Lato } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
+import CallAction from "./Components/CallAction";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
 export default function NotFound() {
-  const [message, setMessage] = useState("It’s somewhere… but not here.");
+  const [message, setMessage] = useState("Page Lost in the Matrix");
 
-  const handleClick = () => {
+  const toggleMessage = () => {
     setMessage((prevMessage) =>
-      prevMessage === "It’s somewhere… but not here."
+      prevMessage === "Page Lost in the Matrix"
         ? "You’ve found a glitch in the system!"
-        : "It’s somewhere… but not here."
+        : "Page Lost in the Matrix"
     );
   };
 
@@ -32,27 +32,22 @@ export default function NotFound() {
         />
       </div>
       <div>
-      <h1
+        <h1
           className={`${lato.className} text-7xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] hidden md:block md:text-9xl`}
         >
           404
         </h1>
         <h2
-          className={`${lato.className} text-3xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] md:text-5xl`}
-        >
-          Page Lost in the Matrix
-        </h2>
-        <p
-          className="text-lg mb-6 text-[#2e2e2e] cursor-pointer dark:text-[#f2f2f2] md:text-2xl"
-          onClick={handleClick}
+          className={`${lato.className} text-3xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] md:text-5xl cursor-pointer`}
+          onClick={toggleMessage}
         >
           {message}
-        </p>
-        <Link href="/">
-          <button className="bg-[#7f8c8f] text-[#f2f2f2] px-5 py-3 rounded cursor-pointer font-bold hover:opacity-75 transition duration-300 md:text-xl">
-            Go Home
-          </button>
-        </Link>
+        </h2>
+        <div className={`${lato.className} flex flex-col gap-3 md:gap-3 md:flex-row md:mr-3`}>
+          <CallAction 
+            name="Go Home"
+          />
+        </div>
       </div>
     </div>
   );

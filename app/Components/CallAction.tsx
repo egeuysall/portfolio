@@ -3,7 +3,11 @@ import { Lato } from "next/font/google";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 
-const CallAction = ( name:string ) => {
+interface CallActionProps {
+    name: string;
+}
+
+const CallAction = ({ name }: CallActionProps) => {
     return (
         <Link href="/" aria-label="Call-to-action button">
             <button className={`${lato.className} bg-[#7f8c8f] w-full md:w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>

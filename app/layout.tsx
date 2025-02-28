@@ -80,9 +80,9 @@ export const metadata = {
     images: ["/og-image.png"],
   },
   icons: {
-    icon: "/icon/favicon-96x96.png",
-    apple: "/icon/apple-touch-icon.png",
-    shortcut: "/icon/favicon-96x96.png",
+    icon: "/favicon-96x96.png",
+    apple: "/apple-touch-icon.png",
+    shortcut: "/favicon-96x96.png",
   },
   manifest: "/manifest.json",
   robots: {
@@ -104,9 +104,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" />
-        <link rel="icon" href="/icon/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}

@@ -1,4 +1,4 @@
-"use client";  
+"use client";
 
 import { Lato } from "next/font/google";
 import Image from "next/image";
@@ -20,7 +20,7 @@ export default function NotFound() {
 
   return (
     <div
-      className={`${lato.className} flex flex-col items-center justify-center h-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24`}
+      className={`${lato.className} flex flex-col items-center justify-center min-h-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24 lg:gap-32`}
     >
       <div>
         <Image
@@ -43,7 +43,7 @@ export default function NotFound() {
         >
           {message}
         </h2>
-        <div className={`${lato.className} flex flex-col gap-3 md:gap-3 md:flex-row md:mr-3`}>
+        <div className={`${lato.className} flex flex-col gap-3 md:gap-3 md:flex-row md:mr-3 max-w-[400px]`}>
           <CallAction 
             name="Go Home"
           />

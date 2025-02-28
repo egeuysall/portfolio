@@ -108,7 +108,7 @@ export default function Home() {
                 {
                   name: "Productivity Guide",
                   desc: "A guide offering practical strategies and methods for enhancing efficiency, focusing on actionable techniques to help individuals and teams maximize productivity.",
-                  tags: ["Productivity", "Focus", "Workflow"],
+                  tags: ["Productivity", "Focus", "Book"],
                   img: "/assets/productivity.png",
                 },
               ].map((project) => (

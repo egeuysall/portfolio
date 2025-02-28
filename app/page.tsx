@@ -16,7 +16,7 @@ export default function Home() {
         {/* Header */}
         <header className="w-[85vw] max-w-[85vw] flex justify-center">
           <nav className="fixed top-0 z-10 w-[85vw] mx-auto">
-            <div className="h-14 w-full bg-[#2e2e2e] mt-8 flex items-center justify-between shadow-md dark:bg-[#f2f2f2] rounded-md px-6">
+            <div className="h-14 w-full bg-[#2e2e2e] mt-8 flex items-center justify-between shadow-lg dark:bg-[#f2f2f2] rounded-md px-6">
               <Link href="/" aria-label="Home">
                 <Image
                   src="/assets/logo.svg"

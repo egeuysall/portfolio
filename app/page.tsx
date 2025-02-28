@@ -27,8 +27,8 @@ export default function Home() {
                 />
               </Link>
               <ul className="hidden md:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6">
-                {["Links", "Contact", "Skills", "Projects"].map((item) => (
-                  <Link key={item} href="#">
+                {["Links", "Contact", "Skills", "Projects"].map((item, index) => (
+                  <Link key={index} href="#">
                     <li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>
                       {item}
                     </li>
@@ -70,9 +70,9 @@ export default function Home() {
 
           {/* Buttons */}
           <div className="flex gap-3">
-            {["Download CV", "Reach Out"].map((text) => (
+            {["Download CV", "Reach Out"].map((text, index) => (
               <button
-                key={text}
+                key={index}
                 className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
               >
                 {text}

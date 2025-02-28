@@ -11,7 +11,6 @@ export default function Home() {
   return (
     <div className="flex items-center h-screen justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e]">
       <div className="h-screen flex-1 flex flex-col gap-8 items-center">
-
         {/* Header */}
         <header className="w-[85vw] max-w-[85vw] flex justify-center">
           <nav className="fixed top-0 z-10 w-[85vw] mx-auto">
@@ -28,11 +27,9 @@ export default function Home() {
               </Link>
               <ul className="hidden md:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 items-center">
                 {["Links", "Contact", "Skills", "Projects"].map((item, index) => (
-                  <Link key={index} href="#">
-                    <li className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>
-                      {item}
-                    </li>
-                  </Link>
+                  <li key={index} className={`hover:opacity-75 active:opacity-50 transition font-bold duration-300 ${lato.className}`}>
+                    <Link href="#">{item}</Link>
+                  </li>
                 ))}
                 <Link href="#" aria-label="Search">
                   <Image
@@ -56,39 +53,36 @@ export default function Home() {
         </header>
 
         {/* Main Content */}
-        <main className="w-[85vw] flex flex-col flex-1 gap-4 mt-16">
-              <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
-                Hi, I&apos;m Ege Uysal.
-              </p>
-              <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2] leading-tight`}>
-                Photographer<br />Developer<br />Founder
-              </h1>
+        <main className="w-[85vw] flex flex-col flex-1 gap-4 mt-16 items-center">
+          <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
+            Hi, I&apos;m Ege Uysal.
+          </p>
+          <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2] leading-tight text-center`}>
+            Photographer<br />Developer<br />Founder
+          </h1>
 
-              {/* Analytics */}
-              <Analytics />
-              <SpeedInsights />
+          {/* Analytics */}
+          <Analytics />
+          <SpeedInsights />
 
-              {/* Buttons */}
-              <div className="flex gap-3">
-                {["Download CV", "Reach Out"].map((text, index) => (
-                  <button
-                    key={index}
-                    className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
-                  >
-                    {text}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div className="flex justify-center h-48 overflow-hidden rounded-md">
+          {/* Buttons */}
+          <div className="flex gap-3">
+            {["Download CV", "Reach Out"].map((text, index) => (
+              <button
+                key={index}
+                className={`${lato.className} bg-[#7f8c8f] mt-6 w-[150px] py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
+              >
+                {text}
+              </button>
+            ))}
           </div>
 
+          <div className="flex justify-center h-48 overflow-hidden rounded-md w-full"></div>
+
           {/* Latest Work */}
-          <section className="mt-8">
-            <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
-              Latest Work
-            </h1>
-            <div className={`${lato.className} mt-4 grid grid-cols-1 md:grid-cols-2 gap-6`}>
+          <section className="mt-8 w-full text-center">
+            <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>Latest Work</h1>
+            <div className={`${lato.className} mt-4 grid grid-cols-1 md:grid-cols-2 gap-6 w-full`}>
               {[
                 {
                   name: "Timora",

@@ -60,7 +60,7 @@ export default function Home() {
           <p className={`${lato.className} text-xl mt-6 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
             Hi, I&apos;m Ege Uysal.
           </p>
-          <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2] leading-tight`}>
+          <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2] leading-tight mb-6`}>
             Photographer<br />Developer<br />Founder
           </h1>
 
@@ -69,11 +69,11 @@ export default function Home() {
           <SpeedInsights />
 
           {/* Buttons */}
-          <div className="flex flex-col gap2 md:gap-3 md:flex-row md:mr-3">
+          <div className="flex flex-col gap-3 md:gap-3 md:flex-row md:mr-3">
             {["Download CV", "Reach Out"].map((text, index) => (
               <button
                 key={index}
-                className={`${lato.className} bg-[#7f8c8f] mt-6 w-full md:w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
+                className={`${lato.className} bg-[#7f8c8f] w-full md:w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
               >
                 {text}
               </button>

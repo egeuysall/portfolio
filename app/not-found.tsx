@@ -43,11 +43,9 @@ export default function NotFound() {
         >
           {message}
         </h2>
-        <div className={`${lato.className} flex flex-col gap-3 md:gap-3 md:flex-row md:mr-3 max-w-[400px]`}>
           <CallAction 
             name="Go Home"
           />
-        </div>
       </div>
     </div>
   );

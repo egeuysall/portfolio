@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
-import { ThemeProvider } from "./Components/ThemeProvider"
-import { ThemeToggle } from "./Components/ThemeToggle"
+import { ThemeProvider } from "./components/theme-provider"
+import { ThemeToggle } from "./components/theme-toggle"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,6 +86,15 @@ export const metadata: Metadata = {
   },
 };
 
+import type React from "react";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
+import "./globals.css";
+
+export const metadata = {
+  generator: 'v0.dev',
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -130,7 +139,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Head>
         <script
           type="application/ld+json"

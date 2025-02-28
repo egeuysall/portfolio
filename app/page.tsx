@@ -71,7 +71,7 @@ export default function Home() {
           <SpeedInsights />
 
           {/* Buttons */}
-          <div className="flex">
+          <div>
             <CallAction
               name="Download CV"
               link="/"

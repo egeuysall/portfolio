@@ -69,11 +69,11 @@ export default function Home() {
           <SpeedInsights />
 
           {/* Buttons */}
-          <div className="flex flex-col gap-3 md:flex-row md:mr-3">
+          <div className="flex flex-col gap2 md:gap-3 md:flex-row md:mr-3">
             {["Download CV", "Reach Out"].map((text, index) => (
               <button
                 key={index}
-                className={`${lato.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
+                className={`${lato.className} bg-[#7f8c8f] mt-6 w-full md:w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}
               >
                 {text}
               </button>

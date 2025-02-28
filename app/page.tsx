@@ -71,12 +71,16 @@ export default function Home() {
           <SpeedInsights />
 
           {/* Buttons */}
+          <div className="flex gap-3">
             <CallAction 
               name="Download CV"
+              link="/"
             />
             <CallAction 
               name="Reach Out"
+              link="/"
             />
+            </div>
 
           {/* Latest Work */}
           <section className="mt-8">

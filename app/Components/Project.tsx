@@ -1,4 +1,10 @@
-ype ProjectProps = {
+import Image from "next/image";
+import Link from "next/link";
+import { Lato } from "next/font/google";
+
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
+
+type ProjectProps = {
   img: string;
   name: string;
   desc: string;

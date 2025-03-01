@@ -51,11 +51,9 @@ export default function NotFound() {
           </p>
         </div>
         <div className="w-full max-w-xs mx-auto">
-          <CallAction
-            name="Go Home"
-            link="/"
-            className="text-sm py-2 px-4 md:text-lg md:py-3 md:px-6"
-          />
+          <div className="w-full flex justify-center">
+            <CallAction name="Go Home" link="/" />
+          </div>
         </div>
       </div>
     </div>

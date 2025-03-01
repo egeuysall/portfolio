@@ -22,16 +22,16 @@ export default function NotFound() {
     <div
       className={`${lato.className} flex flex-col items-center justify-center min-h-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24 lg:gap-32`}
     >
-      <div>
+      <div className="flex-shrink-0">
         <Image
           src="/assets/404.svg"
           alt="404 Illustration"
           width={300}
           height={300}
-          className="mb-8 dark:brightness-125 hover:grayscale-[50%] transition duration-300 w-[28rem]"
+          className="mb-8 dark:brightness-125 hover:grayscale-[50%] transition duration-300 w-[28rem] max-w-full"
         />
       </div>
-      <div>
+      <div className="flex-grow">
         <h1
           className={`${lato.className} text-7xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] hidden md:block md:text-9xl`}
         >
@@ -48,10 +48,12 @@ export default function NotFound() {
         >
           {message}
         </p>
-        <CallAction 
-          name="Go Home"
-          link="/"
-        />
+        <div className="w-full max-w-xs">
+          <CallAction 
+            name="Go Home"
+            link="/"
+          />
+        </div>
       </div>
     </div>
   );

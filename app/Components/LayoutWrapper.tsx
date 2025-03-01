@@ -2,41 +2,19 @@
 
 import JsonLd from "./JsonLd";
 
-interface JsonLdData {
-  "@context": string;
-  "@type": string;
-  name: string;
-  url: string;
-  sameAs: string[];
-  image: string;
-  description: string;
-  jobTitle: string;
-  worksFor: {
+// Define the correct prop type
+interface LayoutWrapperProps {
+  jsonLdData: {
+    "@context": string;
     "@type": string;
     name: string;
+    image: string;
+    description: string;
   };
-  address: {
-    "@type": string;
-    streetAddress: string;
-    addressLocality: string;
-    addressRegion: string;
-    postalCode: string;
-    addressCountry: string;
-  };
-  contactPoint: {
-    "@type": string;
-    telephone: string;
-    contactType: string;
-    areaServed: string;
-    availableLanguage: string[];
-  };
-  creator: {
-    "@type": string;
-    name: string;
-  };
+  children: React.ReactNode;
 }
 
-export default function LayoutWrapper({ jsonLdData, children }: { jsonLdData: JsonLdData; children: React.ReactNode }) {
+export default function LayoutWrapper({ jsonLdData, children }: LayoutWrapperProps) {
   return (
     <>
       <JsonLd jsonLdData={jsonLdData} />

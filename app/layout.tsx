@@ -1,3 +1,4 @@
+// RootLayout.tsx
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import LayoutWrapper from "./Components/LayoutWrapper";

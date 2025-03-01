@@ -16,13 +16,13 @@ const Project = ({ img, name, desc, tags }: ProjectProps) => {
     <Link href="/">
       <div className="p-6 border-2 border-[#cccccc] rounded-md bg-[#ffffff] dark:bg-[#595959] dark:border-[#7f7f7f] box-border h-[35rem] md:h-[28rem] lg:h-[30rem] flex flex-col gap-6">
         {/* Image Section */}
-        <div className="flex justify-center h-48 overflow-hidden rounded-md">
+        <div className="relative w-full h-0 pb-[56.25%] overflow-hidden rounded-md">
           <Image
             src={img}
-            width={700}
-            height={600}
+            layout="fill"
+            objectFit="cover"
             alt={`${name} image`}
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full"
           />
         </div>
 

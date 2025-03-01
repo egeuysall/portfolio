@@ -38,15 +38,20 @@ export default function NotFound() {
           404
         </h1>
         <h2
-          className={`${lato.className} text-3xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] md:text-5xl cursor-pointer`}
+          className={`${lato.className} text-3xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] md:text-5xl`}
+        >
+          Page Not Found
+        </h2>
+        <p
+          className={`${lato.className} text-xl mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] cursor-pointer`}
           onClick={toggleMessage}
         >
           {message}
-        </h2>
-          <CallAction 
-            name="Go Home"
-            link="/"
-          />
+        </p>
+        <CallAction 
+          name="Go Home"
+          link="/"
+        />
       </div>
     </div>
   );

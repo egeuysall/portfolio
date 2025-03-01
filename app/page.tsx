@@ -91,7 +91,7 @@ export default function Home() {
             <h1 className={`${lato.className} text-5xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
               Latest Work
             </h1>
-            <div className={`${lato.className} mt-4 grid grid-cols-1 md:grid-cols-2 gap-4`}>
+            <div className={`${lato.className} mt-4 grid grid-cols-1 md:grid-cols-2 gap-8`}>
               {[
                 {
                   name: "Timora",

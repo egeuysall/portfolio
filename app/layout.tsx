@@ -52,8 +52,9 @@ export const metadata = {
   icons: {
     icon: "/icon.ico",
     apple: "/apple-touch-icon.png",
-    shortcut: "/site.webmanifest",
+    shortcut: "/icon.ico",
   },
+  manifest: "manifest.json",
   robots: "index, follow",
   canonical: "https://www.egeuysal.com",
   charset: "UTF-8",

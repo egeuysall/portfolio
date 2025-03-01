@@ -1,8 +1,6 @@
-"use client";
-
+// LayoutWrapper.tsx
 import JsonLd from "./JsonLd";
 
-// Define the correct prop type
 interface LayoutWrapperProps {
   jsonLdData: {
     "@context": string;

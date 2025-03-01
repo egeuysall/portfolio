@@ -20,7 +20,7 @@ export default function NotFound() {
 
   return (
     <div
-      className={`${lato.className} flex flex-col items-center justify-center min-h-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24 lg:gap-32`}
+      className={`${lato.className} flex flex-col items-center justify-center h-screen w-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24 lg:gap-32`}
     >
       <div className="flex-shrink-0">
         <Image
@@ -47,7 +47,7 @@ export default function NotFound() {
             className={`${lato.className} text-xl text-[#2e2e2e] dark:text-[#f2f2f2] cursor-pointer font-normal`}
             onClick={toggleMessage}
           >
-            {message} (click to reveal a hidden message)
+            {message}
           </p>
         </div>
         <div className="w-full max-w-xs mx-auto">

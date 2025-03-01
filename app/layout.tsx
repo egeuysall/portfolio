@@ -1,6 +1,6 @@
 import "./globals.css";
 import JsonLd from "./Components/JsonLd"; // Importing the JsonLd component
-import { Geist, Geist_Mono } from "@geist-ui/react"; // Assuming these are for font settings
+import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

@@ -1,3 +1,5 @@
+"use client";
+
 // JsonLd.tsx
 import { useEffect } from "react";
 

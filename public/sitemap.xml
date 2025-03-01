@@ -5,43 +5,7 @@
     <loc>https://www.egeuysal.com/</loc>
     <lastmod>2025-03-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.egeuysal.com/photography</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.egeuysal.com/projects</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.egeuysal.com/links</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.egeuysal.com/contact</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.egeuysal.com/skills</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.egeuysal.com/blog</loc>
-    <lastmod>2025-03-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.egeuysal.com/404</loc>
@@ -49,8 +13,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
-
-  <!-- Example Dynamic Content for Projects -->
+</urlset>ynamic Content for Projects -->
   <url>
     <loc>https://www.egeuysal.com/projects/project1</loc>
     <lastmod>2025-03-01</lastmod>

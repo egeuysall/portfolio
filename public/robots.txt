@@ -10,7 +10,4 @@ Disallow:
 User-agent: Yandex
 Disallow:
 
-User-agent: *
-Crawl-delay: 10
-
 Sitemap: https://www.egeuysal.com/sitemap.xml

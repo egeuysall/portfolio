@@ -1,5 +1,9 @@
+"use client";
+
+import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import JsonLd from "./Components/JsonLd"; // Import the JsonLd component
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,7 +67,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/assets/portfolio.png",
         width: 1200,
         height: 630,
         alt: "Ege Uysal Portfolio Preview",
@@ -77,12 +81,12 @@ export const metadata = {
     title: "Ege Uysal Portfolio | Creativity",
     description:
       "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design.",
-    images: ["/og-image.png"],
+    images: ["/assets/portfolio.png"],
   },
   icons: {
-    icon: "/favicon-96x96.png",
+    icon: "/icon.ico",
     apple: "/apple-touch-icon.png",
-    shortcut: "/favicon-96x96.png",
+    shortcut: "/icon.ico",
   },
   manifest: "/manifest.json",
   robots: {
@@ -103,12 +107,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <JsonLd /> {/* Include the JsonLd component */}
         {children}
       </body>
     </html>

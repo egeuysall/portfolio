@@ -34,7 +34,7 @@ const JsonLd = () => {
         "telephone": "+1 (657) 900-0231",
         "contactType": "Customer Service",
         "areaServed": "EN",
-        "availableLanguage": "English, Turkish"
+        "availableLanguage": ["English", "Turkish"]
       },
       "creator": {
         "@type": "Organization",

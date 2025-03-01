@@ -42,17 +42,19 @@ const JsonLd = () => {
       }
     };
 
+    // Create and inject JSON‑LD script
     const script = document.createElement("script");
     script.type = "application/ld+json";
     script.text = JSON.stringify(jsonLdData);
     document.head.appendChild(script);
 
+    // Cleanup on unmount
     return () => {
       document.head.removeChild(script);
     };
   }, []);
 
-  return null;
+  return null; // This component doesn't render anything to the DOM
 };
 
 export default JsonLd;

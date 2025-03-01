@@ -1,9 +1,6 @@
-"use client";
-
-import { useEffect } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import JsonLd from "./Components/JsonLd"; // Import the JsonLd component
+import JsonLd from "./Components/JsonLd"; // Importing the JsonLd component
+import { Geist, Geist_Mono } from "@geist-ui/react"; // Assuming these are for font settings
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -100,15 +97,33 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+// Basic data fetching logic for JSON‑LD
+async function getProduct() {
+  // Replace this with your actual data fetching logic if needed
+  return {
+    name: "Ege Uysal Portfolio",
+    image: "/assets/portfolio.png",
+    description:
+      "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design.",
+  };
+}
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const product = await getProduct();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    image: product.image,
+    description: product.description,
+  };
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <JsonLd /> {/* Include the JsonLd component */}
+        {/* Pass JSON-LD data to the JsonLd component */}
+        <JsonLd jsonLdData={jsonLd} />
         {children}
       </body>
     </html>

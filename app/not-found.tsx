@@ -20,15 +20,15 @@ export default function NotFound() {
 
   return (
     <div
-      className={`${lato.className} flex flex-col items-center justify-center h-screen w-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24 lg:gap-32`}
+      className={`${lato.className} flex flex-col items-center justify-center h-screen w-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e]`}
     >
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 mb-8">
         <Image
           src="/assets/404.svg"
           alt="404 Illustration"
           width={300}
           height={300}
-          className="mb-8 dark:brightness-125 hover:grayscale-[50%] transition duration-300 w-full max-w-xs lg:max-w-sm"
+          className="w-full max-w-xs lg:max-w-sm dark:brightness-125 hover:grayscale-[50%] transition duration-300"
         />
       </div>
       <div className="flex-grow text-center md:text-left">
@@ -54,6 +54,7 @@ export default function NotFound() {
           <CallAction 
             name="Go Home"
             link="/"
+            className="text-sm py-2 px-4 md:text-lg md:py-3 md:px-6" // smaller on mobile, larger on desktop
           />
         </div>
       </div>

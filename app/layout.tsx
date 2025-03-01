@@ -79,7 +79,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Portfolio",
+    "@type": "CreativeWork",
     name: product.name,
     image: product.image,
     description: product.description,

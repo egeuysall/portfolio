@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import CallAction from "./Components/CallAction";
 
-const lato = Lato({ subsets: ["latin"], weight: ["700"] });
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
 export default function NotFound() {
   const [message, setMessage] = useState("Page Lost in the Matrix");
@@ -28,10 +28,10 @@ export default function NotFound() {
           alt="404 Illustration"
           width={300}
           height={300}
-          className="mb-8 dark:brightness-125 hover:grayscale-[50%] transition duration-300 w-[28rem] max-w-full"
+          className="mb-8 dark:brightness-125 hover:grayscale-[50%] transition duration-300 w-full max-w-xs lg:max-w-sm"
         />
       </div>
-      <div className="flex-grow">
+      <div className="flex-grow text-center md:text-left">
         <h1
           className={`${lato.className} text-7xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] hidden md:block md:text-9xl`}
         >
@@ -40,15 +40,17 @@ export default function NotFound() {
         <h2
           className={`${lato.className} text-3xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] md:text-5xl`}
         >
-          Page Not Found
+          Page Lost in the Matrix
         </h2>
-        <p
-          className={`${lato.className} text-xl mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] cursor-pointer`}
-          onClick={toggleMessage}
-        >
-          {message}
-        </p>
-        <div className="w-full max-w-xs">
+        <div className="mb-4">
+          <p
+            className={`${lato.className} text-xl text-[#2e2e2e] dark:text-[#f2f2f2] cursor-pointer font-normal`}
+            onClick={toggleMessage}
+          >
+            {message} (click to reveal a hidden message)
+          </p>
+        </div>
+        <div className="w-full max-w-xs mx-auto">
           <CallAction 
             name="Go Home"
             link="/"

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Ege Uysal Portfolio",
+    default: "Ege Uysal",
     template: "%s | Ege Uysal",
   },
   description:
@@ -23,27 +23,27 @@ export const metadata = {
   metadataBase: new URL("https://www.egeuysal.com"),
   keywords: "Ege Uysal, photography portfolio, web development, UI/UX design, creative professional, developer portfolio, designer portfolio, modern portfolio, UI designer, frontend developer, creative solutions",
   openGraph: {
-    title: "Ege Uysal Portfolio",
+    title: "Ege Uysal",
     description:
       "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions.",
     url: "https://egeuysal.com",
     image: "/assets/og-portfolio.jpg",
     type: "website",
     locale: "en_US",
-    site_name: "Ege Uysal Portfolio",
+    site_name: "Ege Uysal",
     images: [
       {
         url: "/assets/og-portfolio.jpg",
         width: 1200,
         height: 630,
-        alt: "Ege Uysal Portfolio",
+        alt: "Ege Uysal",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@egecreates",
-    title: "Ege Uysal Portfolio",
+    title: "Ege Uysal",
     description:
       "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions.",
     image: "/assets/og-portfolio.jpg",
@@ -67,7 +67,7 @@ export const metadata = {
 // Basic data fetching logic for JSON‑LD
 async function getProduct() {
   return {
-    name: "Ege Uysal Portfolio",
+    name: "Ege Uysal",
     image: "/assets/portfolio.png",
     description:
       "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions.",
@@ -112,10 +112,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <link rel="manifest" href="/manifest.json" />
           <link rel="canonical" href="https://www.egeuysal.com" />
           <meta name="theme-color" content="#2e2e2e" />
-          <title>Ege Uysal Portfolio</title>
+          <title>Ege Uysal</title>
           
           {/* Open Graph Metadata */}
-          <meta property="og:title" content="Ege Uysal Portfolio" />
+          <meta property="og:title" content="Ege Uysal" />
           <meta property="og:description" content="Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions." />
           <meta property="og:url" content="https://www.egeuysal.com" />
           <meta property="og:image" content="/assets/og-portfolio.jpg" />
@@ -124,7 +124,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           {/* Twitter Metadata */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@egecreates" />
-          <meta name="twitter:title" content="Ege Uysal Portfolio" />
+          <meta name="twitter:title" content="Ege Uysal" />
           <meta name="twitter:description" content="Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions." />
           <meta name="twitter:image" content="/assets/og-portfolio.jpg" />
 

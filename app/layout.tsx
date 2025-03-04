@@ -83,7 +83,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     name: product.name,
     image: product.image,
     description: product.description,
-    url: "https://egeuysal.com",
+    url: "https://www.egeuysal.com/",
     creator: {
       "@type": "Person",
       name: "Ege Uysal",

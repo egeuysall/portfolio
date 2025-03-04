@@ -21,6 +21,7 @@ export const metadata = {
   description:
     "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions.",
   metadataBase: new URL("https://www.egeuysal.com"),
+  author: "Ege Uysal",
   keywords: "Ege Uysal, photography portfolio, web development, UI/UX design, creative professional, developer portfolio, designer portfolio, modern portfolio, UI designer, frontend developer, creative solutions",
   openGraph: {
     title: "Ege Uysal",
@@ -107,6 +108,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <meta charSet="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="robots" content="index, follow" />
+          <meta name="author" content="Ege Uysal" />
           <link rel="icon" href="icon.ico" />
           <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
           <link rel="manifest" href="/manifest.json" />

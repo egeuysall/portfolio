@@ -112,6 +112,29 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <link rel="manifest" href="/manifest.json" />
           <link rel="canonical" href="https://www.egeuysal.com" />
           <meta name="theme-color" content="#2e2e2e" />
+          <title>Ege Uysal Portfolio</title>
+          
+          {/* Open Graph Metadata */}
+          <meta property="og:title" content="Ege Uysal Portfolio" />
+          <meta property="og:description" content="Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions." />
+          <meta property="og:url" content="https://www.egeuysal.com" />
+          <meta property="og:image" content="/assets/og-portfolio.jpg" />
+          <meta property="og:type" content="website" />
+
+          {/* Twitter Metadata */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@egecreates" />
+          <meta name="twitter:title" content="Ege Uysal Portfolio" />
+          <meta name="twitter:description" content="Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design. Showcasing innovative work and creative solutions." />
+          <meta name="twitter:image" content="/assets/og-portfolio.jpg" />
+
+          {/* Schema.org JSON-LD */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(jsonLd),
+            }}
+          />
         </Head>
         <LayoutWrapper jsonLdData={jsonLd}>{children}</LayoutWrapper>
       </body>

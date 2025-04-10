@@ -1,59 +1,36 @@
-<p align="center">
-  <a href="https://www.egeuysal.com/" target="_blank" rel="noopener noreferrer">
-    <img src="https://res.cloudinary.com/ddjnqljd8/image/upload/v1743206449/ege.png" height="96">
-    <h3 align="center">Ege Uysal</h3>
-  </a>
-</p>
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-<p align="center">
-  Innovate. Optimize. Create.
-</p>
+## Getting Started
 
-<p align="center">
-  <strong>
-    <a href="https://github.com/egeuysall?tab=repositories" target="_blank" rel="noopener noreferrer">Projects</a>
-  </strong> ∙ 
-  <strong>
-    <a href="https://www.egeuysal.com/" target="_blank" rel="noopener noreferrer">Portfolio</a>
-  </strong> ∙ 
-  <strong>
-    <a href="mailto:hello@egeuysal.com">Email</a>
-  </strong>
-</p>
+First, run the development server:
 
-### About Me
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Hello! I’m Ege Uysal, an entrepreneur, UI/UX designer, and developer with a passion for creating innovative **SaaS solutions**. My goal is to build **scalable, AI-enhanced productivity tools** that help optimize workflows.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Areas of Expertise
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Frontend Development**: Specializing in **React** to build responsive, high-performance web applications.
-- **SaaS Product Development**: Designing and developing **privacy-focused, scalable**, and **AI-powered** tools.
-- **Full-Stack Development**: Expanding expertise in **Swift**, **Kotlin**, and **Go** by Q3 2025.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Technical Proficiencies
+## Learn More
 
-#### Frontend Development
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [React](https://reactjs.org/)
-- [Next.js](https://nextjs.org/)
-- [Vite](https://vitejs.dev/)
+To learn more about Next.js, take a look at the following resources:
 
-#### Backend Development
-- [Python](https://www.python.org/)
-- [Flask](https://flask.palletsprojects.com/en/2.0.x/)  
-- [SQLite](https://www.sqlite.org/index.html)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-#### Mobile & Other Technologies
-- [Swift](https://developer.apple.com/swift/)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### Notable Projects
+## Deploy on Vercel
 
-- [Astra](https://www.astraui.me/): A modern Next.js UI component library designed for speed, simplicity, and scalability.
-- [Links](https://www.links.egeuysal.com/): An open-source, customizable Linktree alternative focused on privacy and SEO.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-I’m always open to **collaborations, discussions, and opportunities** in the fields of **SaaS**, **full-stack development**, and **technology-driven innovation**. Feel free to reach out!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

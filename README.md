@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.egeuysal.com/" target="_blank" rel="noopener noreferrer">
-    <img src="https://res.cloudinary.com/ddjnqljd8/image/upload/v1743206449/ege.png" height="96">
+    <img src="https://res.cloudinary.com/ddjnqljd8/image/upload/v1744988013/github.png" height="96">
     <h3 align="center">Ege Uysal</h3>
   </a>
 </p>

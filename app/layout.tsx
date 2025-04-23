@@ -16,10 +16,10 @@ import { Toaster } from "sonner";
 
 async function getProduct() {
   return {
-    name: "Astra UI: Design faster, build smarter, shine brighter.",
-    image: "/og-links.jpg",
+    name: "Ege Uysal – Developer, Designer, Creator.",
+    image: "/og-image.jpg",
     description:
-      "Astra UI is an open-source UI library for Next.js, offering accessible, production-ready components to power your next project with ease. Try it today!",
+      "Welcome to my portfolio. I'm Ege, a passionate full-stack developer and digital creator. Explore my projects, design work, and innovative ideas here.",
   };
 }
 
@@ -30,33 +30,31 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
       default: product.name,
-      template: "%s | Astra UI",
+      template: "%s | Ege Uysal",
     },
     description: product.description,
-    metadataBase: new URL("https://www.astraui.me/"),
+    metadataBase: new URL("https://egeuysal.dev/"),
     authors: [{ name: "Ege Uysal" }],
     keywords: [
-      "React UI library",
-      "React component library",
-      "Astra UI components",
-      "Astra UI React",
-      "React design system",
-      "UI components for React",
-      "Astra UI kit",
-      "React UI toolkit",
-      "modern React components",
-      "lightweight React UI library",
+      "Ege Uysal",
+      "full-stack developer",
+      "digital creator",
+      "React developer",
+      "personal portfolio",
+      "UI/UX designer",
+      "software engineer",
+      "developer portfolio",
     ],
     openGraph: {
       title: product.name,
       description: product.description,
-      url: "https://www.astraui.me/",
+      url: "https://egeuysal.dev/",
       images: [
         {
           url: product.image,
           width: 1200,
           height: 630,
-          alt: "Astra UI Logo",
+          alt: "Ege Uysal Portfolio",
         },
       ],
       type: "website",
@@ -65,19 +63,19 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      site: "@astraui",
+      site: "@egecreates",
       title: product.name,
       description: product.description,
       images: [product.image],
-      creator: "@astraui",
+      creator: "@egecreates",
     },
     icons: {
       icon: [
-        { url: "/icon.ico", sizes: "any" },
-        { url: "/icon.png", type: "image/png" },
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/favicon.png", type: "image/png" },
       ],
       apple: "/apple-touch-icon.png",
-      shortcut: "/icon.ico",
+      shortcut: "/favicon.ico",
     },
     manifest: "/manifest.json",
     robots: {
@@ -85,9 +83,9 @@ export async function generateMetadata(): Promise<Metadata> {
       follow: true,
     },
     alternates: {
-      canonical: "https://www.astraui.me/",
+      canonical: "https://egeuysal.dev/",
     },
-    applicationName: "Astra UI",
+    applicationName: "Ege Uysal Portfolio",
     appleWebApp: {
       capable: true,
       statusBarStyle: "black-translucent",
@@ -105,65 +103,17 @@ export default async function RootLayout({
 }) {
   const product = await getProduct();
 
-  // Define date for product schema
-  const priceValidUntilDate = new Date();
-  priceValidUntilDate.setFullYear(priceValidUntilDate.getFullYear() + 1);
-  const priceValidUntilString = priceValidUntilDate.toISOString().split("T")[0];
-
   // Format current date for schema (ISO format)
   const currentDate = new Date().toISOString();
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "Person",
     name: product.name,
-    image: `https://www.astraui.me${product.image}`,
+    image: `https://egeuysal.dev${product.image}`,
     description: product.description,
-    url: "https://www.astraui.me/",
+    url: "https://egeuysal.dev/",
     dateModified: currentDate,
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-      url: "https://www.astraui.me/",
-      priceValidUntil: priceValidUntilString,
-      shippingDetails: {
-        "@type": "OfferShippingDetails",
-        shippingRate: {
-          "@type": "MonetaryAmount",
-          value: "0",
-          currency: "USD",
-        },
-        deliveryTime: {
-          "@type": "ShippingDeliveryTime",
-          handlingTime: {
-            "@type": "QuantitativeValue",
-            minValue: "0",
-            maxValue: "0",
-            unitCode: "HUR",
-          },
-        },
-        shippingDestination: {
-          "@type": "DefinedRegion",
-          addressCountry: "US",
-        },
-      },
-      hasMerchantReturnPolicy: {
-        "@type": "MerchantReturnPolicy",
-        applicableCountry: "US",
-        returnPolicyCategory:
-          "https://schema.org/MerchantReturnFiniteReturnWindow",
-        merchantReturnDays: 30,
-        returnMethod: "https://schema.org/ReturnByMail",
-        returnFees: "https://schema.org/FreeReturn",
-      },
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "127",
-    },
     sameAs: [
       "https://twitter.com/egecreates",
       "https://www.linkedin.com/in/egeuysal",
@@ -184,7 +134,7 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="w-full h-full flex-center">
+      <body className="w-full h-full flex-center bg-white dark:bg-black">
         <LayoutWrapper jsonLdData={jsonLd}>
           <main className="w-[90vw] md:w-[92.5vw] lg:w-[95vw] my-12">
             <Toaster />

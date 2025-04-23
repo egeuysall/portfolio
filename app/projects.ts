@@ -10,7 +10,7 @@ const projects: ProjectProps[] = [
   {
     id: "astra-ui",
     title: "Astra UI ",
-    desc: "A beautiful and accessible React UI library designed for speed, flexibility, and great UX.",
+    desc: "A beautiful and accessible React UI library designed for speed, flexibility, and great UI/UX systems.",
     link: "https://astraui.me",
   },
   {

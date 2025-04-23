@@ -77,290 +77,160 @@ export async function POST(request: Request) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
-    <title>Astra UI Submission</title>
-    <style>
-        :root {
-            color-scheme: light dark;
-        }
-        
-        @font-face {
-            font-family: 'Geist';
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://fonts.cdnfonts.com/css/geist);
-        }
-        
-        @font-face {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap);
-        }
-        
-        @font-face {
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            src: url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap);
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            color: #000000;
-            background-color: white;
-            -webkit-font-smoothing: antialiased;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        h1, h2, h3, .info-label {
-            font-family: 'Geist', Verdana, Geneva, sans-serif;
-            letter-spacing: -0.02em;
-        }
-        
-        /* Dark mode styles */
-        @media (prefers-color-scheme: dark) {
-            body {
-                color: #FFFFFF;
-                background-color: #121212;
-            }
-        }
-        
-        .email-wrapper {
-            width: 100%;
-            max-width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 20px 10px;
-        }
-        
-        .email-container {
-            width: 100%;
-            max-width: 100%;
-            background-color: #F5F5F5;
-            overflow: hidden;
-            border-radius: 12px;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            .email-container {
-                background-color: #1e1e1e;
-            }
-        }
-        
-        .email-header {
-            background-color: #000000;
-            padding: 28px 24px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            .email-header {
-                background-color: #000000;
-            }
-        }
-        
-        .logo {
-            max-width: 120px;
-            height: auto;
-            margin-bottom: 16px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .email-header h1 {
-            color: #FFFFFF;
-            margin: 0;
-            font-weight: 700;
-            font-size: 26px;
-        }
-        
-        .email-content {
-            padding: 36px 24px;
-            position: relative;
-            z-index: 1;
-            background-repeat: repeat;
-            background-position: center;
-            background-size: 400px auto;
-        }
-        
-        /* Semi-transparent overlay for better text readability */
-        .email-content::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(245, 245, 245, 0.85);
-            z-index: -1;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            .email-content::before {
-                background-color: rgba(30, 30, 30, 0.9);
-            }
-        }
-        
-        .info-group {
-            margin-bottom: 28px;
-            position: relative;
-        }
-        
-        .info-group:last-child {
-            margin-bottom: 0;
-        }
-        
-        .info-label {
-            font-weight: 700;
-            color: #000000;
-            margin-bottom: 10px;
-            display: block;
-            font-size: 15px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            .info-label {
-                color: #FFFFFF;
-            }
-        }
-        
-        .info-value {
-            margin: 0;
-            background-color: #E8E8E8;
-            padding: 14px 18px;
-            border-radius: 8px;
-            font-size: 16px;
-            color: #000000;
-            word-wrap: break-word;
-            position: relative;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            .info-value {
-                background-color: #2c2c2c;
-                color: #FFFFFF;
-            }
-        }
-        
-        .message-value {
-            white-space: pre-line;
-            line-height: 1.8;
-        }
-        
-        .email-footer {
-            background-color: #E0E0E0;
-            padding: 18px 24px;
-            text-align: center;
-            font-size: 14px;
-            color: #000000;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            position: relative;
-            z-index: 1;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            .email-footer {
-                background-color: #2c2c2c;
-                color: #FFFFFF;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
-            }
-        }
-        
-        a {
-            color: #000000;
-            text-decoration: none;
-            font-weight: normal;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            a {
-                color: #FFFFFF;
-            }
-        }
-        
-        /* Only footer links should be special */
-        .email-footer a {
-            color: #444444;
-            font-weight: 700;
-            transition: all 0.2s ease;
-        }
-        
-        @media (prefers-color-scheme: dark) {
-            .email-footer a {
-                color: #BBBBBB;
-            }
-        }
-        
-        .email-footer a:hover {
-            text-decoration: underline;
-        }
-        
-        @media only screen and (max-width: 480px) {
-            .email-header {
-                padding: 20px 16px;
-            }
-            .email-content {
-                padding: 28px 16px;
-            }
-            .info-value {
-                font-size: 15px;
-                padding: 12px 16px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Portfolio Submission</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #ffffff;
+      }
+    }
+
+    .email-wrapper {
+      width: 100%;
+      max-width: 100%;
+      padding: 20px 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .email-container {
+      width: 100%;
+      background-color: #F5F5F5;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .email-container {
+        background-color: #1e1e1e;
+      }
+    }
+
+    .email-header {
+      background-color: #000000;
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    .email-header h1 {
+      color: #FFFFFF;
+      margin: 0;
+      font-weight: 700;
+      font-size: 26px;
+    }
+
+    .email-content {
+      padding: 36px 24px;
+      position: relative;
+    }
+
+    .info-group {
+      margin-bottom: 28px;
+    }
+
+    .info-label {
+      font-weight: 700;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: block;
+      color: inherit;
+    }
+
+    .info-value {
+      background-color: #E8E8E8;
+      padding: 14px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      color: inherit;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .info-value {
+        background-color: #2c2c2c;
+      }
+    }
+
+    .message-value {
+      white-space: pre-line;
+      line-height: 1.8;
+    }
+
+    .email-footer {
+      background-color: #E0E0E0;
+      padding: 18px 24px;
+      text-align: center;
+      font-size: 14px;
+      color: inherit;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .email-footer {
+        background-color: #2c2c2c;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    }
+
+    .email-footer a {
+      color: #444;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .email-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <div class="email-wrapper">
-        <div class="email-container">
-            <div class="email-header">
-                <h1>Astra UI Submission</h1>
-            </div>
-            
-            <div class="email-content">
-                <div class="info-group">
-                    <span class="info-label">From</span>
-                    <p class="info-value">${name} ${lastName}</p>
-                </div>
-
-                <div class="info-group">
-                    <span class="info-label">Email Address</span>
-                    <p class="info-value">${email}</p>
-                </div>
-
-                <div class="info-group">
-                    <span class="info-label">Message</span>
-                    <p class="info-value message-value">${message.replace(
-                      /\n/g,
-                      "<br />"
-                    )}</p>
-                </div>
-                
-                <div class="info-group">
-                    <span class="info-label">Submitted On</span>
-                    <p class="info-value">${formattedDate}</p>
-                </div>
-            </div>
-            
-            <div class="email-footer">
-                <p>This message was sent from the contact form on <a href="https://astraui.me">astraui.me</a></p>
-            </div>
+  <div class="email-wrapper">
+    <div class="email-container">
+      <div class="email-header">
+        <h1>Portfolio Submission</h1>
+      </div>
+      <div class="email-content">
+        <div class="info-group">
+          <span class="info-label">From</span>
+          <p class="info-value">${name} ${lastName}</p>
         </div>
+        <div class="info-group">
+          <span class="info-label">Email Address</span>
+          <p class="info-value">${email}</p>
+        </div>
+        <div class="info-group">
+          <span class="info-label">Message</span>
+          <p class="info-value message-value">${message.replace(/\n/g, "<br />")}</p>
+        </div>
+        <div class="info-group">
+          <span class="info-label">Submitted On</span>
+          <p class="info-value">${formattedDate}</p>
+        </div>
+      </div>
+      <div class="email-footer">
+        <p>This message was sent from the contact form on <a href="https://egeuysal.com">egeuysal.com</a></p>
+      </div>
     </div>
+  </div>
 </body>
 </html>`;
 
@@ -376,7 +246,7 @@ ${message}
 
 Submitted on: ${formattedDate}
 
-This message was sent from the contact form on astraui.me
+This message was sent from the contact form on egeuysal.com
 `;
 
     // Send email

@@ -9,24 +9,21 @@ interface ProjectProps {
 const projects: ProjectProps[] = [
   {
     id: "astra-ui",
-    title: "Astra UI",
-    desc: "A sleek and accessible React UI library built for rapid development and beautiful design.",
+    title: "Astra UI ",
+    desc: "A beautiful and accessible React UI library designed for speed, flexibility, and great UX.",
     link: "https://astraui.me",
-    linkTitle: "Visit Astra UI",
   },
   {
     id: "links",
-    title: "Links",
-    desc: "An open-source, customizable Linktree alternative with a focus on performance and design.",
+    title: "Links    ",
+    desc: "An open-source Linktree alternative built for creators who value performance, design, and control.",
     link: "https://links.egeuysal.com",
-    linkTitle: "Visit Links",
   },
   {
     id: "loaner",
-    title: "Loaner",
-    desc: "A Swift-powered loan calculator app to help users manage and understand loan payments easily.",
+    title: "Loaner   ",
+    desc: "A Swift-based loan calculator app that helps users track payments and plan finances effortlessly.",
     link: "https://github.com/egeuysall/loaner",
-    linkTitle: "View Loaner on GitHub",
   },
 ];
 

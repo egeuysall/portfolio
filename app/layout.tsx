@@ -7,11 +7,12 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Fonts
-import { inter, geist, geistMono } from "@/fonts";
+import { inter, geist, geistMono } from "@/lib/fonts";
 
 // Internal Components
 import Footer from "@/components/Footer";
 import LayoutWrapper from "@/components/LayoutWrapper";
+import { Toaster } from "sonner";
 
 async function getProduct() {
   return {
@@ -186,6 +187,7 @@ export default async function RootLayout({
       <body className="w-full h-full flex-center">
         <LayoutWrapper jsonLdData={jsonLd}>
           <main className="w-[90vw] md:w-[92.5vw] lg:w-[95vw] my-12">
+            <Toaster />
             <Analytics />
             {children}
             <SpeedInsights />

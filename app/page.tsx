@@ -13,8 +13,8 @@ const Home: React.FC = () => {
     <main className="flex fl flex-col gap-18">
       <section className="w-full flex flex-col gap-3">
         <aside>
-          <h4>Hello, I'm Ege!</h4>
-          <h1>I'm an entrepreneur.</h1>
+          <h4>Hello, I&apos;m Ege!</h4>
+          <h1>I&apos;m an entrepreneur.</h1>
         </aside>
         <p>
           I’m a young entrepreneur building minimalist productivity tools. I
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
           building tools that make a real impact.
         </p>
         <h3>My skills</h3>
-        {skills.map(skill => {
+        {skills.map((skill) => {
           return (
             <Card
               icon={skill.icon}
@@ -56,7 +56,7 @@ const Home: React.FC = () => {
       </section>
       <section className="w-full flex flex-col gap-3">
         <h3>My projects</h3>
-        {projects.map(project => {
+        {projects.map((project) => {
           return (
             <Card
               title={project.title}

@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                     href="mailto:hello@egeuysal.com"
                     className="footer-text"
                   >
-                    Contact us
+                    Contact
                   </Link>
                 </li>
               </ul>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                   <Globe size={iconSize} className="text-black dark:text-white" />
                 </Link>
                 <Link
-                  href="https://github.com/egeuysall/portfolio"
+                  href="https://github.com/egeuysall"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"

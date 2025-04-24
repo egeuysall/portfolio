@@ -17,15 +17,15 @@ const Home: React.FC = () => {
     <main className="flex fl flex-col gap-18">
       <section className="w-full flex flex-col gap-4">
         <aside>
-          <h4>Hello, I&apos;m Ege!</h4>
-          <h1>I&apos;m an entrepreneur.</h1>
+          <h5>Hello, I&apos;m Ege!</h5>
+          <h1>I&apos;m a builder.</h1>
         </aside>
         <p>
           I’m a young entrepreneur building minimalist productivity tools. I
           craft focused software that empowers creators to stay organized,
           efficient, and inspired.
         </p>
-        <section className="w-full grid gap-4">
+        <section className="w-full grid md:flex gap-4">
           <Link href="/#explore">
             <button className="btn-2 w-full md:w-auto">Explore my work</button>
           </Link>
@@ -62,7 +62,7 @@ const Home: React.FC = () => {
       </section>
       <section className="w-full flex flex-col gap-4">
         <h3>My projects</h3>
-        <section className="grid gap-4 lg:grid-cols-3">
+        <section className="grid gap-4 lg:grid-cols-3" id="explore">
           {projects.map((project) => {
             return (
               <Link href={project.link || "/"} key={project.id}>
@@ -88,9 +88,11 @@ const Home: React.FC = () => {
       </section>
       <section className="w-full flex flex-col gap-4">
         <h2>Testimonials</h2>
-        <Testimonials />
+        <div className="w-full">
+          <Testimonials />
+        </div>
       </section>
-      <section className="w-full flex flex-col gap-4">
+      <section className="w-full flex flex-col gap-4" id="get-in-touch">
         <h2>Get in touch</h2>
         <Contact />
       </section>

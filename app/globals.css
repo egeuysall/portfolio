@@ -62,7 +62,7 @@
   h5,
   h6 {
     font-family: var(--font-geist);
-    @apply tracking-tight text-black dark:text-white font-bold lg:w-2/4;
+    @apply tracking-tight text-black dark:text-white font-bold lg:w-3/4;
   }
 
   /* Code typography */
@@ -98,7 +98,7 @@
 
   p {
     @apply text-base md:text-lg;
-    @apply tracking-tight text-black dark:text-white lg:w-2/4;
+    @apply tracking-tight text-black dark:text-white lg:w-3/4;
   }
 }
 

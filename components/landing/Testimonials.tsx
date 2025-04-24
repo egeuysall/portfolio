@@ -7,7 +7,7 @@ const secondRow = reviews.slice(reviews.length / 2);
 
 export default function MarqueeDemo() {
   return (
-    <div className="relative flex w-screen flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
       <Marquee className="[--duration:5]">
         {firstRow.map((review) => (
           <div className="px-2" key={review.username}>

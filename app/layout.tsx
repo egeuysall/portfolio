@@ -126,7 +126,7 @@ export default async function RootLayout({
       lang="en"
       dir="ltr"
       suppressHydrationWarning
-      className={`${inter.variable} ${geist.variable} ${geistMono.variable} pb-18`}
+      className={`${inter.variable} ${geist.variable} ${geistMono.variable}`}
     >
       <head>
         <script
@@ -136,7 +136,7 @@ export default async function RootLayout({
       </head>
       <body className="w-full h-full flex-center bg-white dark:bg-black">
         <LayoutWrapper jsonLdData={jsonLd}>
-          <main className="w-[90vw] md:w-[92.5vw] lg:w-[95vw] my-12">
+          <main className="w-[90vw] md:w-[92.5vw] lg:w-[95vw]">
             <Toaster />
             <Analytics />
             {children}

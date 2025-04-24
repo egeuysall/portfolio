@@ -14,7 +14,7 @@ import Contact from "@/components/landing/Contact";
 
 const Home: React.FC = () => {
   return (
-    <main className="flex fl flex-col gap-18">
+    <main className="flex w-full flex-col gap-18">
       <section className="w-full flex flex-col gap-4">
         <aside>
           <h5>Hello, I&apos;m Ege!</h5>

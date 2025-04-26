@@ -26,8 +26,8 @@ const Home: React.FC = () => {
           efficient, and inspired.
         </p>
         <section className="w-full grid md:flex gap-4">
-          <Link href="/#explore">
-            <button className="btn-2 w-full md:w-auto">Explore my work</button>
+          <Link href="/blog">
+            <button className="btn-2 w-full md:w-auto">Explore my blog</button>
           </Link>
           <Link href="/#get-in-touch">
             <button className="btn-1 w-full md:w-auto">Get in touch</button>

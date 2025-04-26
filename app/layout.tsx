@@ -16,10 +16,10 @@ import { Toaster } from "sonner";
 
 async function getProduct() {
   return {
-    name: "Ege Uysal – Developer, Designer, Creator.",
+    name: "Ege Uysal Portfolio: Innovate, Optimize, Create.",
     image: "/og-image.jpg",
     description:
-      "Welcome to my portfolio. I'm Ege, a passionate full-stack developer and digital creator. Explore my projects, design work, and innovative ideas here.",
+      "Welcome to my portfolio. I am Ege Uysal, a designer, developer, and innovator creating high-performance, beautiful, and impactful digital experiences.",
   };
 }
 

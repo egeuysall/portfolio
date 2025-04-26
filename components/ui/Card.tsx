@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({ icon, title, desc, date }) => {
         <h6 className="w-full">{title}</h6>
         <p className="w-full opacity-50">{date}</p>
       </section>
-      <p className="w-full !text-sm">{desc}</p>
+      <p className="w-full text-xs">{desc}</p>
     </article>
   );
 };

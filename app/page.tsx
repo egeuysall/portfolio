@@ -17,8 +17,8 @@ const Home: React.FC = () => {
     <main className="flex w-full flex-col gap-18">
       <section className="w-full flex flex-col gap-4">
         <aside>
-          <h5>Hello, I&apos;m Ege!</h5>
-          <h1>I&apos;m a builder.</h1>
+          <h5>Hello, I&apos;m Ege Uysal!</h5>
+          <h1>I&apos;m an innovator.</h1>
         </aside>
         <p>
           I’m a young entrepreneur building minimalist productivity tools. I

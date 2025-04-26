@@ -13,9 +13,9 @@ const Card: React.FC<CardProps> = ({ icon, title, desc, date }) => {
       <aside className="text-black dark:text-white">{icon}</aside>
       <section>
         <h6 className="w-full">{title}</h6>
-        <p className="w-full opacity-50">{date}</p>
+        <p className="w-full opacity-50 text-sm">{date}</p>
       </section>
-      <p className="w-full text-xs">{desc}</p>
+      <p className="w-full">{desc}</p>
     </article>
   );
 };

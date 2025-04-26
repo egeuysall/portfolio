@@ -21,7 +21,7 @@ const blogs: blogsProps[] = [
     link: "/blog/second-brain",
     linkTitle: "Read Article",
     slug: "second-brain",
-    publishedAt: "2025-04-01",
+    publishedAt: "22 April, 2025",
   },
   {
     id: "astraui-release",
@@ -31,7 +31,7 @@ const blogs: blogsProps[] = [
     link: "/blog/astraui-release",
     linkTitle: "Read Release",
     slug: "release",
-    publishedAt: "2025-04-26",
+    publishedAt: "24 April, 2025",
   },
   {
     id: "links-release",
@@ -41,7 +41,7 @@ const blogs: blogsProps[] = [
     link: "/blog/links-release",
     linkTitle: "Read Launch Post",
     slug: "links",
-    publishedAt: "2025-04-26",
+    publishedAt: "26 April, 2025",
   },
 ];
 

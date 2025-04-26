@@ -10,7 +10,7 @@ const Blog: React.FC = () => {
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         {blogs.map((blog) => (
           <Link href={blog.link || "/"} key={blog.id}>
-            <Card icon={blog.icon} title={blog.title} desc={blog.desc} />
+            <Card icon={blog.icon} title={blog.title} desc={blog.desc} date={blog.publishedAt}/>
           </Link>
         ))}
       </section>

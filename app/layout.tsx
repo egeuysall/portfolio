@@ -16,10 +16,10 @@ import { Toaster } from "sonner";
 
 async function getProduct() {
   return {
-    name: "Ege Uysal – Developer, Designer, Creator.",
+    name: "Ege Uysal Portfolio: Innovate, Optimize, Create.",
     image: "/og-image.jpg",
     description:
-      "Welcome to my portfolio. I'm Ege, a passionate full-stack developer and digital creator. Explore my projects, design work, and innovative ideas here.",
+      "Welcome to my portfolio. I am Ege Uysal, a designer, developer, and innovator creating high-performance, beautiful, and impactful digital experiences.",
   };
 }
 
@@ -33,22 +33,53 @@ export async function generateMetadata(): Promise<Metadata> {
       template: "%s | Ege Uysal",
     },
     description: product.description,
-    metadataBase: new URL("https://egeuysal.dev/"),
+    metadataBase: new URL("https://www.egeuysal.com/"),
     authors: [{ name: "Ege Uysal" }],
     keywords: [
       "Ege Uysal",
+      "Ege Uysal portfolio",
       "full-stack developer",
-      "digital creator",
+      "front-end developer",
+      "backend developer",
       "React developer",
-      "personal portfolio",
+      "Next.js developer",
+      "TypeScript developer",
       "UI/UX designer",
+      "web designer",
+      "digital creator",
+      "creative technologist",
       "software engineer",
+      "product designer",
+      "digital product creator",
+      "minimalist web designer",
+      "innovative developer",
+      "professional portfolio",
       "developer portfolio",
+      "designer portfolio",
+      "creative portfolio",
+      "Figma designer",
+      "user experience designer",
+      "user interface designer",
+      "performance-focused developer",
+      "digital innovator",
+      "young entrepreneur",
+      "personal brand website",
+      "Apple ecosystem developer",
+      "modern web creator",
+      "app developer",
+      "SaaS developer",
+      "design-driven developer",
+      "high-performance websites",
+      "beautiful user interfaces",
+      "technology enthusiast",
+      "visionary creator",
+      "future-ready developer",
+      "coding and design expert",
     ],
     openGraph: {
       title: product.name,
       description: product.description,
-      url: "https://egeuysal.dev/",
+      url: "https://www.egeuysal.com/",
       images: [
         {
           url: product.image,
@@ -71,7 +102,7 @@ export async function generateMetadata(): Promise<Metadata> {
     },
     icons: {
       icon: [
-        { url: "/favicon.ico", sizes: "any" },
+        { url: "/icon.ico", sizes: "any" },
         { url: "/favicon.png", type: "image/png" },
       ],
       apple: "/apple-touch-icon.png",
@@ -83,7 +114,7 @@ export async function generateMetadata(): Promise<Metadata> {
       follow: true,
     },
     alternates: {
-      canonical: "https://egeuysal.dev/",
+      canonical: "https://egeuysal.com/",
     },
     applicationName: "Ege Uysal Portfolio",
     appleWebApp: {
@@ -110,9 +141,9 @@ export default async function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: product.name,
-    image: `https://egeuysal.dev${product.image}`,
+    image: `https://egeuysal.com/${product.image}`,
     description: product.description,
-    url: "https://egeuysal.dev/",
+    url: "https://egeuysal.com/",
     dateModified: currentDate,
     sameAs: [
       "https://twitter.com/egecreates",

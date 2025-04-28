@@ -4,7 +4,7 @@ import { Globe, Github, Mail } from "lucide-react";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  const iconSize = 20
+  const iconSize = 22
 
   return (
     <footer className="w-full bg-[#ffffff] dark:bg-[#000000] border border-[#f2f2f2] dark:border-[#2e2e2e] rounded-xl py-8 px-6 mt-auto">
@@ -36,10 +36,8 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="grid gap-2">
-            <h6 className="footer-text font-bold">Connect</h6>
-
-            <address className="not-italic">
-              <div className="flex items-center h-full gap-2">
+            <h6 className="footer-text font-bold">Connect</h6>h6
+              <div className="flex gap-2">
                 <Link
                   href="https://www.egeuysal.com/"
                   target="_blank"
@@ -65,7 +63,6 @@ const Footer: React.FC = () => {
                   <Mail size={iconSize} className="text-black dark:text-white" />
                 </Link>
               </div>
-            </address>
           </div>
         </div>
       </div>

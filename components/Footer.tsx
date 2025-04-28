@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
             <h6 className="footer-text font-bold">Connect</h6>
 
             <address className="mt-3 not-italic">
-              <div className="flex items-center h-full gap-4">
+              <div className="flex items-center h-full gap-2">
                 <Link
                   href="https://www.egeuysal.com/"
                   target="_blank"

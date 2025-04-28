@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     <footer className="w-full bg-[#ffffff] dark:bg-[#000000] border border-[#f2f2f2] dark:border-[#2e2e2e] rounded-xl py-8 px-6 mt-auto">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="grid gap-2">
+          <div className="flex flex-col gap-2">
             <h6 className="footer-text font-bold">Ege Uysal</h6>
 
             <p className="footer-text w-full">Innovate. Optimize. Create.</p>
@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             <p className="footer-text">&copy; {currentYear} Ege Uysal</p>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-2">
             <h6 className="footer-text font-bold">Resources</h6>
 
             <nav>
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             </nav>
           </div>
 
-          <div className="grid gap-2">
+          <div className="flex flex-col gap-2">
             <h6 className="footer-text font-bold">Connect</h6>h6
               <div className="flex gap-2">
                 <Link

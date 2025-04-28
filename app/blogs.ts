@@ -16,7 +16,7 @@ const blogs: blogsProps[] = [
   {
     id: "second-brain",
     icon: React.createElement(PenLine, { size: 24 }),
-    title: "Building a Second Brain with Obsidian",
+    title: "My Second Brain System",
     desc: "How I built a minimalist, frictionless Second Brain using Obsidian and why it completely changed my creative energy and flow forever.",
     link: "/blog/second-brain",
     linkTitle: "Read Article",

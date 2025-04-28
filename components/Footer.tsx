@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h6 className="footer-text font-bold">Connect</h6>h6
+            <h6 className="footer-text font-bold">Connect</h6>
               <div className="flex gap-2">
                 <Link
                   href="https://www.egeuysal.com/"

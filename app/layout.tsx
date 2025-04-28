@@ -157,7 +157,7 @@ export default async function RootLayout({
       lang="en"
       dir="ltr"
       suppressHydrationWarning
-      className={`${inter.variable} ${geist.variable} ${geistMono.variable} pb-14`}
+      className={`${inter.variable} ${geist.variable} ${geistMono.variable} pb-10`}
     >
       <head>
         <script

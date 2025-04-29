@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Ege Uysal",
+    "age": 15,
+    "interests": ["coding", "design", "photography"],
+    "isStudent": true
+  },
+  {
+    "id": 2,
+    "name": "Alex Johnson",
+    "age": 30,
+    "interests": ["gaming", "music", "traveling"],
+    "isStudent": false
+  },
+  {
+    "id": 3,
+    "name": "Emma Smith",
+    "age": 22,
+    "interests": ["writing", "reading", "photography"],
+    "isStudent": true
+  }
+]

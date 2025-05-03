@@ -251,9 +251,9 @@ This message was sent from the contact form on egeuysal.com
 
     // Send email
     const { error } = await resend.emails.send({
-      from: "Astra UI <contact@egeuysal.com>",
+      from: "Ege Uysal <contact@egeuysal.com>",
       to: [adminEmail, email],
-      subject: `Astra UI Submission from ${name} ${lastName}`,
+      subject: `Ege Uysal Submission from ${name} ${lastName}`,
       replyTo: email,
       text: textContent,
       html: htmlContent,

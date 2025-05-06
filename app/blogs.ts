@@ -1,5 +1,5 @@
 import React from "react";
-import { PenLine, Rocket, Link } from "lucide-react";
+import { PenLine, Rocket, Link, CalendarSearch } from "lucide-react";
 
 interface blogsProps {
   id: string;
@@ -42,6 +42,16 @@ const blogs: blogsProps[] = [
     linkTitle: "Read Launch Post",
     slug: "links",
     publishedAt: "26 April, 2025",
+  },
+  {
+    id: "spot-release",
+    icon: React.createElement(CalendarSearch, { size: 24 }),
+    title: "Spot v1.0 Release",
+    desc: "Spot is a clean, smart, AI-powered event explorer that pulls from Ticketmaster and filters with ChatGPT. Simple idea, surprisingly useful.",
+    link: "/blog/spot-release",
+    linkTitle: "Read Launch Post",
+    slug: "spot",
+    publishedAt: "6 May, 2025",
   },
 ];
 

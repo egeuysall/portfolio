@@ -20,10 +20,10 @@ const projects: ProjectProps[] = [
     link: "https://links.egeuysal.com",
   },
   {
-    id: "loaner",
-    title: "Loaner   ",
-    desc: "A Swift-based loan calculator app that helps users track payments and plan finances effortlessly.",
-    link: "https://github.com/egeuysall/loaner",
+    id: "spot",
+    title: "Spot",
+    desc: "An AI-powered event discovery tool built for speed, simplicity, and truly personal recommendations.",
+    link: "https://www.spot.egeuysal.com",
   },
 ];
 

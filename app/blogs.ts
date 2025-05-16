@@ -53,6 +53,16 @@ const blogs: blogsProps[] = [
     slug: "spot",
     publishedAt: "6 May, 2025",
   },
+  {
+    id: "muse-release",
+    icon: React.createElement(PenLine, { size: 24 }),
+    title: "Muse v1.0 Release",
+    desc: "Muse is a minimalist platform for capturing and sharing quick ideas instantly, designed to inspire creativity and collaboration effortlessly.",
+    link: "/blog/muse-release",
+    linkTitle: "Read Launch Post",
+    slug: "muse",
+    publishedAt: "16 May, 2025",
+  },
 ];
 
 export default blogs;

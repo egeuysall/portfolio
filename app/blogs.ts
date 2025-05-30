@@ -1,5 +1,5 @@
 import React from "react";
-import { PenLine, Rocket, Link, CalendarSearch } from "lucide-react";
+import { PenLine, Rocket, Link, CalendarSearch, Code } from "lucide-react";
 
 interface blogsProps {
   id: string;
@@ -62,6 +62,16 @@ const blogs: blogsProps[] = [
     linkTitle: "Read Launch Post",
     slug: "muse",
     publishedAt: "16 May, 2025",
+  },
+  {
+    id: "rest-release",
+    icon: React.createElement(Code, { size: 24 }),
+    title: "Rest v1.0 Release",
+    desc: "Rest is an elegant JSON sharing platform that provides beautiful code block designs and expiration features for your shared data.",
+    link: "/blog/rest-release",
+    linkTitle: "Read Launch Post",
+    slug: "rest",
+    publishedAt: "30 May, 2025",
   },
 ];
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { PenLine, Rocket, Link, CalendarSearch, Code } from "lucide-react";
+import { PenLine, Rocket, Link, CalendarSearch, Code, Gift } from "lucide-react";
 
 interface blogsProps {
   id: string;
@@ -72,6 +72,16 @@ const blogs: blogsProps[] = [
     linkTitle: "Read Launch Post",
     slug: "rest",
     publishedAt: "30 May, 2025",
+  },
+  {
+    id: "present-release",
+    icon: React.createElement(Gift, { size: 24 }),
+    title: "Present v1.0 Release",
+    desc: "Present is a clean, privacy-first gift planning app that helps you organize ideas, track budgets, and manage gifts easily across all your devices, all year round.",
+    link: "/blog/present-release",
+    linkTitle: "Read Launch Post",
+    slug: "present",
+    publishedAt: "18 June, 2025",
   },
 ];
 

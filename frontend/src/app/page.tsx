@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import React from 'react';
+import { FileCode, Code2, Paintbrush2, Database, Hexagon } from 'lucide-react';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
@@ -102,8 +103,8 @@ const RepoCard: React.FC<{ repo: any }> = ({ repo }) => (
   </Card>
 );
 
-// SkillCard component to showcase skills (no photo, use Card, show experience and desc)
 type Skill = {
+  icon: React.ReactNode;
   name: string;
   experience: string;
   description: string;
@@ -111,41 +112,52 @@ type Skill = {
 
 const skills: Skill[] = [
   {
-    name: "Next.js",
-    experience: "3 years",
-    description: "Production experience building full-stack web apps and APIs with Next.js.",
+    icon: <FileCode />,
+    name: 'Next.js',
+    experience: '1 year',
+    description:
+      'Built production-grade web apps and APIs, leveraging SSR and API routes for scalable projects.',
   },
   {
-    name: "TypeScript",
-    experience: "3 years",
-    description: "Strongly typed JavaScript for safer, scalable codebases.",
+    icon: <Code2 />,
+    name: 'TypeScript',
+    experience: '1 year',
+    description:
+      'Migrated large codebases to TypeScript, improving safety and maintainability across all projects.',
   },
   {
-    name: "Tailwind CSS",
-    experience: "2 years",
-    description: "Rapid UI development with utility-first CSS and custom design systems.",
+    icon: <Paintbrush2 />,
+    name: 'Tailwind CSS',
+    experience: '1 year',
+    description:
+      'Designed custom UI systems and rapidly prototyped interfaces using Tailwind utility classes.',
   },
   {
-    name: "Golang",
-    experience: "2 years",
-    description: "Backend services and APIs with Go, focusing on performance and reliability.",
+    icon: <Hexagon />,
+    name: 'Golang',
+    experience: '4 months',
+    description:
+      'Developed performant backend services and REST APIs, focusing on concurrency and reliability.',
   },
   {
-    name: "PostgreSQL",
-    experience: "2 years",
-    description: "Relational database design, migrations, and query optimization.",
+    icon: <Database />,
+    name: 'PostgreSQL',
+    experience: '4 months',
+    description:
+      'Implemented complex queries, migrations, and optimized schemas for scalable storage.',
   },
 ];
 
 const SkillCard: React.FC<{ skill: Skill }> = ({ skill }) => (
-  <Card className="min-w-[220px] max-w-xs flex flex-col">
+  <Card className="w-full flex flex-col h-full gap-sm">
     <CardHeader>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-3xs">
+        <p>{skill.icon}</p>
         <span className="font-semibold text-neutral-900 dark:text-neutral-100">{skill.name}</span>
         <span className="text-xs text-neutral-500">{skill.experience} experience</span>
       </div>
     </CardHeader>
-    <CardContent>
+    <CardContent className="flex-1 flex items-end">
       <p className="text-sm text-neutral-700 dark:text-neutral-300">{skill.description}</p>
     </CardContent>
   </Card>
@@ -198,9 +210,9 @@ const Landing: React.FC = async () => {
       </section>
       <section id="skills" className="w-full flex flex-col gap-md">
         <h4>My Skills</h4>
-        <ul className="flex flex-wrap gap-md">
+        <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-md">
           {skills.map((skill) => (
-            <li key={skill.name}>
+            <li key={skill.name} className="w-full">
               <SkillCard skill={skill} />
             </li>
           ))}
@@ -215,7 +227,7 @@ const Landing: React.FC = async () => {
             blogs.map((blog: any) => (
               <li key={blog.id}>
                 <a
-                  href={`https://www.blog/egeuysal.com/${blog.slug}`}
+                  href={`https://www.blog.egeuysal.com/${blog.slug}`}
                   className="hover:no-underline hover:opacity-75 transition-opacity ease-in-out"
                 >
                   <BlogCard blog={blog} />

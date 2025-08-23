@@ -54,7 +54,9 @@ const Landing: React.FC = async () => {
       {/* Hero Section */}
       <section className="w-full flex flex-col gap-md">
         <div>
-          <h1>Hi, I&apos;m Ege. A builder.</h1>
+          <h1>
+            Hi, I&apos;m Ege. <br /> A builder.
+          </h1>
           <p className="text-neutral-700 dark:text-neutral-300">
             I&apos;m passionate about building meaningful experiences through design and code.
           </p>
@@ -82,7 +84,7 @@ const Landing: React.FC = async () => {
       </section>
       <section id="about" className="w-full flex flex-col gap-md">
         <h4>About Me</h4>
-        <ul className="list-disc pl-3">
+        <ul className="list-disc pl-6">
           <li>I&apos;m a full-stack developer and designer based in Chicago, United States.</li>
           <li>I love building web apps with Next.js, Go, and PostgreSQL.</li>
           <li>I&apos;m passionate about UI/UX, accessibility, and performance.</li>

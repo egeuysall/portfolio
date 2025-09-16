@@ -29,7 +29,7 @@ async function fetchLatestRepos() {
 // Fetch latest blog posts
 async function fetchLatestBlogs() {
   try {
-    const res = await fetch('https://blogapi.egeuysal.com/v1/blogs?limit=3', {
+    const res = await fetch('https://blogapi.egeuysal.com:8443/v1/blogs?limit=3', {
       next: { revalidate: 3600 },
     });
 

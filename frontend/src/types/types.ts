@@ -10,7 +10,7 @@ export type GitHubRepo = {
   name: string;
   description: string | null;
   html_url: string;
-  homepage: string | null;
+  homepage: string | undefined;
   language: string | null;
 };
 

@@ -1,4 +1,4 @@
-import { FileCode, Code2, Paintbrush2, Database, Hexagon } from 'lucide-react';
+import { FileCode, Code2, Paintbrush2, Database, Hexagon, Container } from 'lucide-react';
 import type { Skill } from '@/types/types';
 
 export const skills: Skill[] = [
@@ -36,5 +36,12 @@ export const skills: Skill[] = [
     experience: '4 months',
     description:
       'Implemented complex queries, migrations, and optimized schemas for scalable storage.',
+  },
+  {
+    icon: <Container />,
+    name: 'Docker',
+    experience: '6 months',
+    description:
+      'Containerized applications for consistent development and production environments.',
   },
 ];

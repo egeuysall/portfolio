@@ -5,7 +5,12 @@ export const RepoCard: React.FC<{ repo: GitHubRepo }> = ({ repo }) => (
   <Card className="flex flex-col gap-xs">
     <CardHeader>
       <div className="flex items-center justify-between">
-        <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="font-semibold">
+        <a
+          href={repo.homepage || repo.html_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold"
+        >
           {repo.name}
         </a>
       </div>
@@ -27,8 +32,8 @@ export const RepoCard: React.FC<{ repo: GitHubRepo }> = ({ repo }) => (
                   repo.language === 'TypeScript'
                     ? 'bg-primary-700'
                     : repo.language === 'Go'
-                    ? 'bg-primary-300'
-                    : 'bg-error-700'
+                      ? 'bg-primary-300'
+                      : 'bg-error-700'
                 }`}
               />
               {repo.language}

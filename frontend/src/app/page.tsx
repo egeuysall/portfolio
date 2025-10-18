@@ -94,7 +94,7 @@ const Landing: React.FC = async () => {
       </section>
       <section id="skills" className="w-full flex flex-col gap-md">
         <h4>My Skills</h4>
-        <ul className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-md">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md">
           {skills.map((skill) => (
             <li key={skill.name} className="w-full">
               <SkillCard skill={skill} />

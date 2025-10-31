@@ -106,7 +106,7 @@ const Landing: React.FC = async () => {
         <h4>My Blog</h4>
         <ul className="grid lg:grid-cols-3 gap-xl">
           {blogs.length === 0 ? (
-            <li className="text-neutral-500">No blog posts found.</li>
+            <li className="text-neutral-500 text-small">No blog posts found.</li>
           ) : (
             blogs.map((blog: Blog) => (
               <li key={blog.id}>

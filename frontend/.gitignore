@@ -1,0 +1,23 @@
+# Environment files
+.env*.local
+
+# Next.js build output
+.next
+.out
+
+# Node modules
+node_modules
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE files
+.idea
+.vscode
+.DS_Store
+
+# Coverage
+coverage
